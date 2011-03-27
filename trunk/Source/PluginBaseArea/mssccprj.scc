@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[PluginBaseArea.dsp]
+SCC_Aux_Path = "F:\油气项目文档\SourceCode\PluginSourceSafe"
+SCC_Project_Name = "$/PluginBaseArea", VAAAAAAA

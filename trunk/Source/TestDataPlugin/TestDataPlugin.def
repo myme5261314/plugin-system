@@ -1,0 +1,10 @@
+; TestDataPlugin.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestDataPlugin"
+DESCRIPTION  'TestDataPlugin Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+
+    dllStartPlugin	@1
+	dllStopPlugin	@2

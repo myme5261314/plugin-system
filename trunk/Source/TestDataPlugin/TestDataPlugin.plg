@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestDataPlugin - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP2E8.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\Bin/b.pdb" /debug /machine:I386 /def:".\TestDataPlugin.def" /out:"..\..\Bin/b.dpl" /implib:"..\..\Bin/b.lib" 
+".\Release\TestDataPlugin.obj"
+".\Release\MyContainer.obj"
+".\Release\MyElement.obj"
+".\Release\MyElementFactory.obj"
+".\Release\StdAfx.obj"
+".\Release\TestDataPlugin.res"
+]
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSP2E8.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library ..\..\Bin/b.lib and object ..\..\Bin/b.exp
+
+
+
+<h3>Results</h3>
+b.dpl - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
