@@ -1,0 +1,7 @@
+; PluginManager.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "PluginManager"
+DESCRIPTION  'PluginManager Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8956882D-DFD2-4A4F-9DAB-04EC0777021F}</ProjectGUID>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>cugpetrel</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>G:\cugpetrel\GsTL-1.3;C:\Program Files\VTK\include\vtk-5.6;..\include;..\tcl857-src\tcl8.5.7\generic;..\..\boost_1_40_0\boost_1_40_0;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\cugpetrel\lib;C:\Program Files\VTK\lib\vtk-5.6;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\libxml2\include;.\lib;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)\include;$(FrameworkSDKDir)include;</IncludePath>
+    <LibraryPath>..\libxml2\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AdditionalLibraryDirectories>.\xmllite.lib;.\Gretaud.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sqlite3.lib;xmllite.lib;tcl85.lib;tclstub85.lib;vtkalglib.lib;vtkCommon.lib;vtkDICOMParser.lib;vtkexoIIc.lib;vtkexpat.lib;vtkFiltering.lib;vtkfreetype.lib;vtkftgl.lib;vtkGenericFiltering.lib;vtkGraphics.lib;vtkHybrid.lib;vtkImaging.lib;vtkIO.lib;vtkjpeg.lib;vtklibxml2.lib;vtkmetaio.lib;vtkNetCDF.lib;vtkpng.lib;vtkproj4.lib;vtkRendering.lib;vtksqlite.lib;vtksys.lib;vtktiff.lib;vtkverdict.lib;vtkVolumeRendering.lib;vtkWidgets.lib;vtkzlib.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>esent.lib;libxml2.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Debug\cugpetrel.ini">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\XML\CMGNamesToPropertyTypeCatalog.xml" />
+    <None Include="..\XML\EclipseNamesToPropertyTypeCatalog.xml" />
+    <None Include="..\XML\EclipseToPetrelUnitNameCatalog.xml" />
+    <None Include="..\XML\LogNamesToPropertyTypeCatalog.xml" />
+    <None Include="..\XML\OpenSpiritWellSymbolsToWellType.xml" />
+    <None Include="..\XML\RescueNamesToPropertyTypeCatalog.xml" />
+    <None Include="..\XML\VIPNamesToPropertyTypeCatalog.xml" />
+    <None Include="..\XML\WellTypesToOpenSpiritWellSymbol.xml" />
+    <None Include="ClassDiagram41.cd" />
+    <None Include="ClassDiagram42.cd" />
+    <None Include="cugpetrel.reg" />
+    <None Include="petdoc.cd" />
+    <None Include="petitem.cd" />
+    <None Include="petview.cd" />
+    <None Include="petwidget.cd" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\case_view.bmp" />
+    <None Include="res\case_view.ico" />
+    <None Include="res\classview.bmp" />
+    <None Include="res\classview_hc.bmp" />
+    <None Include="res\class_view.ico" />
+    <None Include="res\class_view_hc.ico" />
+    <None Include="res\cugpetrel.ico" />
+    <None Include="res\cugpetrel.rc2" />
+    <None Include="res\cugpetrelDoc.ico" />
+    <None Include="res\database_view.bmp" />
+    <None Include="res\database_view.ico" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\fileview.bmp" />
+    <None Include="res\fileview_hc.bmp" />
+    <None Include="res\file_view.ico" />
+    <None Include="res\file_view_hc.ico" />
+    <None Include="res\ico00001.ico" />
+    <None Include="res\ico128.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon128.ico" />
+    <None Include="res\icon2.ico" />
+    <None Include="res\icon3.ico" />
+    <None Include="res\input.xml" />
+    <None Include="res\input_view.bmp" />
+    <None Include="res\input_view.ico" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\model_view.bmp" />
+    <None Include="res\model_view.ico" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\process_view.bmp" />
+    <None Include="res\process_view.ico" />
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="res\properties_wnd.ico" />
+    <None Include="res\properties_wnd_hc.ico" />
+    <None Include="res\result_view.bmp" />
+    <None Include="res\result_view.ico" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\template_view.bmp" />
+    <None Include="res\template_view.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\treecheckstate.bmp" />
+    <None Include="res\vtkwidget.bmp" />
+    <None Include="res\window_view.bmp" />
+    <None Include="res\window_view.ico" />
+    <None Include="res\workflow_view.bmp" />
+    <None Include="res\workflow_view.ico" />
+    <None Include="UserImages.bmp" />
+    <None Include="ViewTree.h_" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnyScatterKeyword.cpp" />
+    <ClCompile Include="ArrayKeyword.cpp" />
+    <ClCompile Include="BarDemoView.cpp" />
+    <ClCompile Include="casepane.cpp" />
+    <ClCompile Include="CommonFunc.cpp" />
+    <ClCompile Include="COneFract.cpp" />
+    <ClCompile Include="CornGridImporter.cpp" />
+    <ClCompile Include="cpptcl.cc" />
+    <ClCompile Include="D3Viewsupple.cpp" />
+    <ClCompile Include="DiscreteFractImporter.cpp" />
+    <ClCompile Include="EclDATAImporter.cpp" />
+    <ClCompile Include="EditTreeCtrl.cpp" />
+    <ClCompile Include="EditTreeCtrlEx.cpp" />
+    <ClCompile Include="GeneralScatterKeyword.cpp" />
+    <ClCompile Include="GeneralTableKeyword.cpp" />
+    <ClCompile Include="GridCell.cpp" />
+    <ClCompile Include="GridCellBase.cpp" />
+    <ClCompile Include="GridCellCheck.cpp" />
+    <ClCompile Include="GridCellCombo.cpp" />
+    <ClCompile Include="GridCellDateTime.cpp" />
+    <ClCompile Include="GridCellNumeric.cpp" />
+    <ClCompile Include="GridCtrl.cpp" />
+    <ClCompile Include="GridDropTarget.cpp" />
+    <ClCompile Include="GridURLCell.cpp" />
+    <ClCompile Include="InPlaceEdit.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="KrogProp.cpp" />
+    <ClCompile Include="KrowProp.cpp" />
+    <ClCompile Include="laswriter.cpp" />
+    <ClCompile Include="Layer_dll.cpp" />
+    <ClCompile Include="MultiScatterKeyword.cpp" />
+    <ClCompile Include="MultiTableKeyword.cpp" />
+    <ClCompile Include="PETChildFrm.cpp" />
+    <ClCompile Include="DBpane.cpp" />
+    <ClCompile Include="PetDataImporter.cpp" />
+    <ClCompile Include="PetProjectDocTemplate.cpp" />
+    <ClCompile Include="petreltableImporter.cpp" />
+    <ClCompile Include="PetXmlWriter.cpp" />
+    <ClCompile Include="PVTGProp.cpp" />
+    <ClCompile Include="PVTOProp.cpp" />
+    <ClCompile Include="ReadEclDataFile.cpp" />
+    <ClCompile Include="SQLite3Class.cpp" />
+    <ClCompile Include="petapp.cpp" />
+    <ClCompile Include="D2Doc.cpp" />
+    <ClCompile Include="D2View.cpp" />
+    <ClCompile Include="D3Doc.cpp" />
+    <ClCompile Include="D3View.cpp" />
+    <ClCompile Include="FuncDoc.cpp" />
+    <ClCompile Include="FuncView.cpp" />
+    <ClCompile Include="HistoDoc.cpp" />
+    <ClCompile Include="HistoView.cpp" />
+    <ClCompile Include="inputpane.cpp" />
+    <ClCompile Include="InterpDoc.cpp" />
+    <ClCompile Include="InterpView.cpp" />
+    <ClCompile Include="IntersectDoc.cpp" />
+    <ClCompile Include="IntersectView.cpp" />
+    <ClCompile Include="MapDoc.cpp" />
+    <ClCompile Include="MapView.cpp" />
+    <ClCompile Include="modelpane.cpp" />
+    <ClCompile Include="MutiTreeCtrl.cpp" />
+    <ClCompile Include="infopane.cpp" />
+    <ClCompile Include="PetCompletion.cpp" />
+    <ClCompile Include="petDoc.cpp" />
+    <ClCompile Include="PetDockablePane.cpp" />
+    <ClCompile Include="petenv.cpp" />
+    <ClCompile Include="PetItem.cpp" />
+    <ClCompile Include="PetLog.cpp" />
+    <ClCompile Include="petMainFrm.cpp" />
+    <ClCompile Include="PetObservation.cpp" />
+    <ClCompile Include="PetStimulation.cpp" />
+    <ClCompile Include="petView.cpp" />
+    <ClCompile Include="PetWell.cpp" />
+    <ClCompile Include="PlotDoc.cpp" />
+    <ClCompile Include="PlotView.cpp" />
+    <ClCompile Include="processpane.cpp" />
+    <ClCompile Include="ProjectDoc.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="regexpr2.cpp" />
+    <ClCompile Include="resultpane.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StereoDoc.cpp" />
+    <ClCompile Include="StereoView.cpp" />
+    <ClCompile Include="syntax2.cpp" />
+    <ClCompile Include="templatepane.cpp" />
+    <ClCompile Include="TitleTip.cpp" />
+    <ClCompile Include="vtkAppendFieldFilter.cpp" />
+    <ClCompile Include="vtkcorngridlayersource.cpp" />
+    <ClCompile Include="vtkCornGridLut.cpp" />
+    <ClCompile Include="vtkCornGridOutlinesource.cpp" />
+    <ClCompile Include="vtkCornGridReader.cpp" />
+    <ClCompile Include="vtkFractReader.cpp" />
+    <ClCompile Include="vtkMergeLines.cpp" />
+    <ClCompile Include="vtkMultiImplicit.cpp" />
+    <ClCompile Include="vtkPet3DInteractorStyle.cpp" />
+    <ClCompile Include="vtkPetAppendFilter.cxx" />
+    <ClCompile Include="vtkPetCompass.cpp" />
+    <ClCompile Include="vtkPetM2MCutter.cpp" />
+    <ClCompile Include="vtkPetRender.cpp" />
+    <ClCompile Include="vtkPetScalarBar.cpp" />
+    <ClCompile Include="vtkPlanesSource.cpp" />
+    <ClCompile Include="vtkWellReader.cpp" />
+    <ClCompile Include="Wellclass.cpp" />
+    <ClCompile Include="wellconnectionImporter.cpp" />
+    <ClCompile Include="WellheaderImporter.cpp" />
+    <ClCompile Include="WellProductionHistory.cpp" />
+    <ClCompile Include="WellsectionDoc.cpp" />
+    <ClCompile Include="WellsectionView.cpp" />
+    <ClCompile Include="Wellstruct.cpp" />
+    <ClCompile Include="WellTops.cpp" />
+    <ClCompile Include="welltopsImporter.cpp" />
+    <ClCompile Include="WelltrackImporter.cpp" />
+    <ClCompile Include="windowpane.cpp" />
+    <ClCompile Include="workflowpane.cpp" />
+    <ClCompile Include="xmllitetest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cugpetrel.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnyScatterKeyword.h" />
+    <ClInclude Include="ArrayKeyword.h" />
+    <ClInclude Include="BarDemoView.h" />
+    <ClInclude Include="casepane.h" />
+    <ClInclude Include="CellRange.h" />
+    <ClInclude Include="CommonFunc.h" />
+    <ClInclude Include="COneFract.h" />
+    <ClInclude Include="CornGridImporter.h" />
+    <ClInclude Include="cpptcl.h" />
+    <ClInclude Include="CursorDef.h" />
+    <ClInclude Include="DiscreteFractImporter.h" />
+    <ClInclude Include="EclDATAImporter.h" />
+    <ClInclude Include="EditTreeCtrl.h" />
+    <ClInclude Include="EditTreeCtrlEx.h" />
+    <ClInclude Include="GeneralScatterKeyword.h" />
+    <ClInclude Include="GeneralTableKeyword.h" />
+    <ClInclude Include="GridCell.h" />
+    <ClInclude Include="GridCellBase.h" />
+    <ClInclude Include="GridCtrl.h" />
+    <ClInclude Include="GridDropTarget.h" />
+    <ClInclude Include="InPlaceEdit.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="KrogProp.h" />
+    <ClInclude Include="KrowProp.h" />
+    <ClInclude Include="laswriter.h" />
+    <ClInclude Include="Layer_dll.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="MultiScatterKeyword.h" />
+    <ClInclude Include="MultiTableKeyword.h" />
+    <ClInclude Include="PETChildFrm.h" />
+    <ClInclude Include="DBpane.h" />
+    <ClInclude Include="PetDataImporter.h" />
+    <ClInclude Include="PetProjectDocTemplate.h" />
+    <ClInclude Include="petreltableImporter.h" />
+    <ClInclude Include="PetXmlWriter.h" />
+    <ClInclude Include="PVTGProp.h" />
+    <ClInclude Include="PVTOProp.h" />
+    <ClInclude Include="ReadEclDataFile.h" />
+    <ClInclude Include="SQLite3Class.h" />
+    <ClInclude Include="D2Doc.h" />
+    <ClInclude Include="D2View.h" />
+    <ClInclude Include="D3Doc.h" />
+    <ClInclude Include="D3View.h" />
+    <ClInclude Include="FuncDoc.h" />
+    <ClInclude Include="FuncView.h" />
+    <ClInclude Include="HistoDoc.h" />
+    <ClInclude Include="HistoView.h" />
+    <ClInclude Include="inputpane.h" />
+    <ClInclude Include="InterpDoc.h" />
+    <ClInclude Include="InterpView.h" />
+    <ClInclude Include="IntersectDoc.h" />
+    <ClInclude Include="IntersectView.h" />
+    <ClInclude Include="MapDoc.h" />
+    <ClInclude Include="MapView.h" />
+    <ClInclude Include="modelpane.h" />
+    <ClInclude Include="MutiTreeCtrl.h" />
+    <ClInclude Include="infopane.h" />
+    <ClInclude Include="petapp.h" />
+    <ClInclude Include="PetCompletion.h" />
+    <ClInclude Include="petDoc.h" />
+    <ClInclude Include="PetDockablePane.h" />
+    <ClInclude Include="petenv.h" />
+    <ClInclude Include="PetItem.h" />
+    <ClInclude Include="PetLog.h" />
+    <ClInclude Include="petMainFrm.h" />
+    <ClInclude Include="PetObservation.h" />
+    <ClInclude Include="PetStimulation.h" />
+    <ClInclude Include="petView.h" />
+    <ClInclude Include="PetWell.h" />
+    <ClInclude Include="PlotDoc.h" />
+    <ClInclude Include="PlotView.h" />
+    <ClInclude Include="processpane.h" />
+    <ClInclude Include="ProjectDoc.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="regexpr2.h" />
+    <ClInclude Include="reimpl2.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="restack.h" />
+    <ClInclude Include="resultpane.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StereoDoc.h" />
+    <ClInclude Include="StereoView.h" />
+    <ClInclude Include="syntax2.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="templatepane.h" />
+    <ClInclude Include="TitleTip.h" />
+    <ClInclude Include="vtkAppendFieldFilter.h" />
+    <ClInclude Include="vtkcorngridlayersource.h" />
+    <ClInclude Include="vtkCornGridLut.h" />
+    <ClInclude Include="vtkCornGridOutlinesource.h" />
+    <ClInclude Include="vtkCornGridReader.h" />
+    <ClInclude Include="vtkFractReader.h" />
+    <ClInclude Include="vtkMergeLines.h" />
+    <ClInclude Include="vtkMultiImplicit.h" />
+    <ClInclude Include="vtkPet3DInteractorStyle.h" />
+    <ClInclude Include="vtkPetAppendFilter.h" />
+    <ClInclude Include="vtkPetCompass.h" />
+    <ClInclude Include="vtkPetM2MCutter.h" />
+    <ClInclude Include="vtkPetRender.h" />
+    <ClInclude Include="vtkPetScalarBar.h" />
+    <ClInclude Include="vtkPlanesSource.h" />
+    <ClInclude Include="vtkWellReader.h" />
+    <ClInclude Include="Wellclass.h" />
+    <ClInclude Include="wellconnectionImporter.h" />
+    <ClInclude Include="WellheaderImporter.h" />
+    <ClInclude Include="WellPath.h" />
+    <ClInclude Include="WellProductionHistory.h" />
+    <ClInclude Include="WellsectionDoc.h" />
+    <ClInclude Include="WellsectionView.h" />
+    <ClInclude Include="WellTops.h" />
+    <ClInclude Include="welltopsImporter.h" />
+    <ClInclude Include="WelltrackImporter.h" />
+    <ClInclude Include="windowpane.h" />
+    <ClInclude Include="workflowpane.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="cugpetrel.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

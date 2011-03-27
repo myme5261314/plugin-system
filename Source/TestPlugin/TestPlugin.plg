@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestPlugin - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPCE92.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/TestPlugin.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\TestPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\MainFrm.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\WorkspaceBar.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\TestPluginDoc.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\TestPluginView.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPCE92.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPCEA3.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/TestPlugin.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPCEA3.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+TestPlugin.cpp
+MainFrm.cpp
+Automatically linking with BCGCBPRO100.lib
+WorkspaceBar.cpp
+Automatically linking with BCGCBPRO100.lib
+TestPluginDoc.cpp
+Automatically linking with BCGCBPRO100.lib
+TestPluginView.cpp
+Generating Code...
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPE96F.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"..\..\Bin/TestPlugin.pdb" /debug /machine:I386 /out:"..\..\Bin/TestPlugin.exe" 
+".\Release\TestPlugin.obj"
+".\Release\MainFrm.obj"
+".\Release\WorkspaceBar.obj"
+".\Release\StdAfx.obj"
+".\Release\TestPluginDoc.obj"
+".\Release\TestPluginView.obj"
+".\Release\TestPlugin.res"
+]
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSPE96F.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+Creating command line "bscmake.exe /nologo /o"..\..\Bin/TestPlugin.bsc"  ".\Release\StdAfx.sbr" ".\Release\TestPlugin.sbr" ".\Release\MainFrm.sbr" ".\Release\WorkspaceBar.sbr" ".\Release\TestPluginDoc.sbr" ".\Release\TestPluginView.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TestPlugin.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

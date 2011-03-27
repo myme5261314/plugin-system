@@ -1,0 +1,7 @@
+; PluginBaseArea.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "PluginBaseArea"
+DESCRIPTION  'PluginBaseArea Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

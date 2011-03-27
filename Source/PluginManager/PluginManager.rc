@@ -1,0 +1,330 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PluginManager.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "PluginManager DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "PluginManager"
+            VALUE "LegalCopyright", "版权所有 (C) 2010"
+            VALUE "OriginalFilename", "PluginManager.DLL"
+            VALUE "ProductName", "PluginManager Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTAINER_MENU MENU 
+BEGIN
+    POPUP "Container"
+    BEGIN
+        MENUITEM "创建容器",                        ID_CREATE_CONTAINER
+        MENUITEM "删除容器",                        ID_DELETE_CONTAINER
+        MENUITEM SEPARATOR
+        MENUITEM "添加元素",                        ID_APPEND_ELEMENT
+        MENUITEM "删除所有元素",                      ID_DELETE_ALL_ELEMENTS
+        MENUITEM SEPARATOR
+        MENUITEM "显示",                          ID_SHOW_CONTAINER
+        MENUITEM "隐藏",                          ID_HIDE_CONTAINER
+        MENUITEM SEPARATOR
+        MENUITEM "选择",                          ID_SELECT_CONTAINER
+        MENUITEM "取消选择",                        ID_UNSELECT_CONTAINER
+        MENUITEM SEPARATOR
+        MENUITEM "容器属性",                        ID_EDIT_CONTAINER_ATTR
+    END
+END
+
+IDR_ROOT_MENU MENU 
+BEGIN
+    POPUP "Root"
+    BEGIN
+        MENUITEM "创建容器",                        ID_CREATE_CONTAINER
+        MENUITEM SEPARATOR
+        MENUITEM "显示所有容器",                      ID_SHOW_ALL_CONTAINER
+        MENUITEM "隐藏所有容器",                      ID_HIDE_ALL_CONTAINER
+        MENUITEM SEPARATOR
+        MENUITEM "删除所有容器",                      ID_DELETE_ALL_CONTAINER
+    END
+END
+
+IDR_ELEMENT_MENU MENU 
+BEGIN
+    POPUP "Element"
+    BEGIN
+        MENUITEM "关联数据",                        ID_RELATE_DATA
+        MENUITEM "取消关联",                        ID_UNRELATE_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "删除元素",                        ID_DELETE_ELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "显示",                          ID_SHOW_ELEMENT
+        MENUITEM "隐藏",                          ID_HIDE_ELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "选择",                          ID_SELECT_ELEMENT
+        MENUITEM "取消选择",                        ID_UNSELECT_ELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "元素属性",                        ID_EDIT_ELEMENT_ATTR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADD_CONTAINER_DLG DIALOGEX 0, 0, 237, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加容器"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确 定",IDOK,182,11,50,14
+    PUSHBUTTON      "取 消",IDCANCEL,182,29,50,14
+    EDITTEXT        IDC_EDIT1,11,19,157,14,ES_AUTOHSCROLL
+    GROUPBOX        "请选择容器类型",IDC_STATIC,6,41,169,98
+    CONTROL         "List2",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,11,54,158,79,WS_EX_CLIENTEDGE
+    GROUPBOX        "请输入容器名称",IDC_STATIC,6,7,169,31
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 186, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,59,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,58,50,14
+    LTEXT           "请输入元素名",IDC_STATIC,29,21,49,8
+    EDITTEXT        IDC_EDIT1,84,20,76,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_CREATE_CONTAINER     "创建容器"
+    ID_DELETE_CONTAINER     "删除容器"
+    ID_EDIT_CONTAINER_ATTR  "容器属性"
+    ID_HIDE_CONTAINER       "隐藏容器"
+    ID_SHOW_CONTAINER       "显示容器"
+    ID_SELECT_CONTAINER     "选择容器"
+    ID_UNSELECT_CONTAINER   "取消选择"
+    ID_APPEND_ELEMENT       "添加元素"
+    ID_DELETE_ALL_ELEMENTS  "删除所有元素"
+    ID_SHOW_ALL_CONTAINER   "显示所有容器"
+    ID_HIDE_ALL_CONTAINER   "隐藏所有容器"
+    ID_DELETE_ALL_CONTAINER "删除所有容器"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DELETE_ELEMENT       "删除元素"
+    ID_RELATE_DATA          "关联数据"
+    ID_UNRELATE_DATA        "取消关联"
+    ID_SHOW_ELEMENT         "显示元素"
+    ID_HIDE_ELEMENT         "隐藏元素"
+    ID_SELECT_ELEMENT       "选择元素"
+    ID_UNSELECT_ELEMENT     "取消选择"
+    ID_EDIT_ELEMENT_ATTR    "元素属性"
+    ID_RES1                 "RES1"
+    ID_RES2                 "RES2"
+    ID_RES3                 "RES2"
+    ID_RES4                 "RES2"
+    ID_RES5                 "RES2"
+    ID_RES6                 "RES2"
+    ID_RES7                 "RES2"
+    ID_RES8                 "RES2"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RES9                 "RES2"
+    ID_RES10                "RES2"
+    ID_RES11                "RES2"
+    ID_RES12                "RES2"
+    ID_RES13                "RES2"
+    ID_RES14                "RES2"
+    ID_RES15                "RES2"
+    ID_RES16                "RES2"
+    ID_RES17                "RES2"
+    ID_RES18                "RES2"
+    ID_RES19                "RES2"
+    ID_RES20                "RES2"
+    ID_RES21                "RES2"
+    ID_RES22                "RES2"
+    ID_RES23                "RES2"
+    ID_RES24                "RES2"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RES25                "RES2"
+    ID_RES26                "RES2"
+    ID_RES27                "RES2"
+    ID_RES28                "RES2"
+    ID_RES29                "RES2"
+    ID_RES30                "RES2"
+    ID_RES31                "RES2"
+    ID_RES32                "RES2"
+    ID_RES33                "RES2"
+    ID_RES34                "RES2"
+    ID_RES35                "RES2"
+    ID_RES36                "RES2"
+    ID_RES37                "RES2"
+    ID_RES38                "RES2"
+    ID_RES39                "RES2"
+    ID_RES40                "RES2"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RES41                "RES2"
+    ID_RES42                "RES2"
+    ID_RES43                "RES2"
+    ID_RES44                "RES2"
+    ID_RES45                "RES2"
+    ID_RES46                "RES2"
+    ID_RES47                "RES2"
+    ID_RES48                "RES2"
+    ID_RES49                "RES2"
+    ID_RES50                "RES2"
+    IDS_PROMPT0             "系统信息提示"
+    IDS_STRING1             "请输入容器名称或者选择容器类型!"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PluginManager.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
