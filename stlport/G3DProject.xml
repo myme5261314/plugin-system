@@ -1,0 +1,726 @@
+<RootContainer Type="{90FC801B-47FA-4017-8DA3-CD841BBE474A}" Name="根容器" DispName="三维工程" Visible="true" Selected="false">
+    <Children>
+        <Container Type="{D44C6657-92ED-40f7-B01E-DC38D80C18ED}" Name="a0地理要素图层0" DispName="地理要素图层" Visible="false" Selected="false">
+            <Children />
+            <Elements>
+                <Element 影像库路径="此结点下的影象数据来自于网络" 影像库类型="1" Type="{69F095ED-1383-41dc-AE09-A92CA0879889}" Name="遥感影像1" DisplayName="遥感影像" Visible="false" Selected="true" />
+                <Element 底图路径="C:\mapgis67\底图\*.dbs" 底图图类型="false" Type="{A6F3E0C4-4775-49a3-AA93-F4B16E33DA3C}" Name="地理底图0" DisplayName="地理底图" Visible="false" Selected="true" />
+            </Elements>
+        </Container>
+        <Container Type="{59940373-98AC-40ac-863B-3946A11C0CC4}" Name="地球物理36" DispName="地球物理" Visible="false" Selected="false">
+            <Children>
+                <Container PntInfoSubno="7" PntInfoHeight="2" PntInfoWidth="2" PntInfoAngle="0" PntInfoIclr="133" Type="{D9B59810-E364-49fd-B2B6-D202B8074D74}" Name="重力数据37" DispName="重力数据" Visible="false" Selected="false">
+                    <Children />
+                    <Elements />
+                </Container>
+                <Container PntInfoSubno="3" PntInfoHeight="2" PntInfoWidth="2" PntInfoAngle="0" PntInfoIclr="98" Type="{FD45CA11-4AE5-4121-9E7F-0D6B79339B2D}" Name="航磁数据38" DispName="航磁数据" Visible="false" Selected="false">
+                    <Children />
+                    <Elements />
+                </Container>
+                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地球物理图件48" DispName="地球物理图件" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="布格重力49" DispName="布格重力" Visible="false" Selected="false">
+                            <Children>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="布格重力异常图50" DispName="布格重力异常图" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\布格重力异常图\布格重力异常图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="布格重力异常85" DisplayName="布格重力异常" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\1k\异常图(上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延1km" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\2k\异常图(上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延2km" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\5k\异常图(上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延5km" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\10k\异常图(上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延10km" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\20k\异常图(上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延20km" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\30k\异常图(上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延30km" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\50k\异常图(上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延50km" DisplayName="上延50km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\up\60k\异常图(上延60km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延60km" DisplayName="上延60km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="垂向一阶导数图51" DispName="垂向一阶导数图" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\D1\垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="垂向一阶导数86" DisplayName="垂向一阶导数" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\1k\d1(上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延1kmd1" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\2k\d1(上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延2kmd1" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\5k\d1(上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延5kmd1" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\10k\d1(上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延10kmd1" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\20k\d1(上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延20kmd1" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\30k\d1(上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延30kmd1" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d1\50k\d1(上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延50kmd1" DisplayName="上延50km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="垂向二阶导数图52" DispName="垂向二阶导数图" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\D2\垂向二阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="垂向二阶导数86" DisplayName="垂向二阶导数" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\1k\d2(上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延1kmd2" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\2k\d2(上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延2kmd2" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\5k\d2(上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延5kmd2" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\10k\d2(上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延10kmd2" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\20k\d2(上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延20kmd2" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\30k\d2(上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延30kmd2" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\d2\50k\d2(上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延50kmd2" DisplayName="上延50km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数图0°53" DispName="水平一阶导数图  0°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\h0\水平一阶导数图(0度).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数0°86" DisplayName="水平一阶导数0°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\1k\h0(上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延1kmh0" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\2k\h0(上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延2kmh0" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\5k\h0(上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延5kmh0" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\10k\h0(上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延10kmh0" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\20k\h0(上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延20kmh0" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\30k\h0(上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延30kmh0" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h0\50k\h0(上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延50kmh0" DisplayName="上延50km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数图45°54" DispName="水平一阶导数图 45°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\h45\水平一阶导数图(45度).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数45°86" DisplayName="水平一阶导数45°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\1k\h45(上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延1kmh45" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\2k\h45(上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延2kmh45" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\5k\h45(上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延5kmh45" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\10k\h45(上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延10kmh45" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\20k\h45(上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延20kmh45" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\30k\h45(上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延30kmh45" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h45\50k\h45(上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延50kmh45" DisplayName="上延50km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数图90°47" DispName="水平一阶导数图 90°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\h90\水平一阶导数图(90度).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数90°86" DisplayName="水平一阶导数90°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\1k\h90(上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延1kmh90" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\2k\h90(上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延2kmh90" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\5k\h90(上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延5kmh90" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\10k\h90(上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延10kmh90" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\20k\h90(上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延20kmh90" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\30k\h90(上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延30kmh90" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h90\50k\h90(上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延50kmh90" DisplayName="上延50km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数图135°48" DispName="水平一阶导数图135°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\h135\水平一阶导数图(135度).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水平一阶导数135°86" DisplayName="水平一阶导数135°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\1k\h135(上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延1kmh135" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\2k\h135(上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延2kmh135" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\5k\h135(上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延5kmh135" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\10k\h135(上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延10kmh135" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\20k\h135(上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延20kmh135" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\30k\h135(上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延30kmh135" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\重力数据\h135\50k\h135(上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上延50kmh135" DisplayName="上延50km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                            </Children>
+                            <Elements />
+                        </Container>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁49" DispName="航磁" Visible="false" Selected="false">
+                            <Children>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常图50" DispName="航磁异常图" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\Ys\Hc\异常图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常85" DisplayName="航磁异常" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\Ys\Hchj\异常图(化极).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极)86" DisplayName="航磁异常(化极)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj1k\异常图(化极上延1km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延1km)" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj2k\异常图(化极上延2km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延2km)" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj5k\异常图(化极上延5km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延5km)" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj10k\异常图(化极上延10km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延10km)" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj20k\异常图(化极上延20km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延20km)" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj30k\异常图(化极上延30km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延30km)" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj50k\异常图(化极上延50km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延50km)" DisplayName="上延50km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\UP\Hchj60k\异常图(化极上延60km).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="航磁异常(化极上延60km)" DisplayName="上延60km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc垂向一阶导数图" DispName="垂向一阶导数图" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\hcD1\垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc垂向一阶导数" DisplayName="垂向一阶导数" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\Hc1kd1\上延1km垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延1kmd1" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\Hc2kd1\上延2km垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延2kmd1" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\Hc5kd1\上延5km垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延5kmd1" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\Hc10kd1\上延10km垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延10kmd1" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\Hc20kd1\上延20km垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延20kmd1" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\Hc30kd1\上延30km垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延30kmd1" DisplayName="上延30km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\d1\Hc50kd1\上延50km垂向一阶导数图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延50kmd1" DisplayName="上延50km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数图000" DispName="水平一阶导数图  0°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h0\Hc00\水平导数(0°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数0°" DisplayName="水平一阶导数0°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h0\Hc1k0\上延1km水平导数(0°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延1kmh0" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h0\Hc2k0\上延2km水平导数(0°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延2kmh0" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h0\Hc5k0\上延5km水平导数(0°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延5kmh0" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h0\Hc10k0\上延10km水平导数(0°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延10kmh0" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h0\Hc20k0\上延20km水平导数(0°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延20kmh0" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h0\Hc30k0\上延30km水平导数(0°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延30kmh0" DisplayName="上延30km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数图045" DispName="水平一阶导数图 45°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h45\Hc045\水平导数(45°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数45°" DisplayName="水平一阶导数45°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h45\Hc1k45\上延1km水平导数(45°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延1kmh45" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h45\Hc2k45\上延2km水平导数(45°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延2kmh45" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h45\Hc5k45\上延5km水平导数(45°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延5kmh45" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h45\Hc10k45\上延10km水平导数(45°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延10kmh45" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h45\Hc20k45\上延20km水平导数(45°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延20kmh45" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h45\Hc30k45\上延30km水平导数(45°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延30kmh45" DisplayName="上延30km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数图090" DispName="水平一阶导数图 90°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h90\Hc090\水平导数(90°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数90°" DisplayName="水平一阶导数90°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h90\Hc1k90\上延1km水平导数(90°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延1kmh90" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h90\Hc2k90\上延2km水平导数(90°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延2kmh90" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h90\Hc5k90\上延5km水平导数(90°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延5kmh90" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h90\Hc10k90\上延10km水平导数(90°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延10kmh90" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h90\Hc20k90\上延20km水平导数(90°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延20kmh90" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h90\Hc30k90\上延30km水平导数(90°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延30kmh90" DisplayName="上延30km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数图135" DispName="水平一阶导数图135°" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h135\Hc0135\水平导数(135°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc水平一阶导数135°" DisplayName="水平一阶导数135°" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h135\Hc1k135\上延1km水平导数(135°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延1kmh135" DisplayName="上延1km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h135\Hc2k135\上延2km水平导数(135°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延2kmh135" DisplayName="上延2km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h135\Hc5k135\上延5km水平导数(135°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延5kmh135" DisplayName="上延5km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h135\Hc10k135\上延10km水平导数(135°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延10kmh135" DisplayName="上延10km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h135\Hc20k135\上延20km水平导数(135°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延20kmh135" DisplayName="上延20km" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球物理\重磁图册\航磁数据\h135\Hc30k135\上延30km水平导数(135°).MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="hc上延30kmh135" DisplayName="上延30km" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                            </Children>
+                            <Elements />
+                        </Container>
+                    </Children>
+                    <Elements />
+                </Container>
+            </Children>
+            <Elements />
+        </Container>
+        <Container Type="{8FC19FDD-5D5B-45f2-A1F9-E4CBBDD37CD5}" Name="基岩地质3" DispName="基岩地质" Visible="false" Selected="false">
+            <Children>
+                <Container Type="{8FC19FDD-5D5B-45f2-A1F9-E4CBBDD37CD5}" Name="历史地震25" DispName="历史地震" Visible="false" Selected="false">
+                    <Children />
+                    <Elements>
+                        <Element RELSQL="SELECT y1030seismlog.SEISMID,y1030seismlog.PREVID,y1030seismlog.SEISMDATE,y1030seismlog.SEISMTIME,y1030seismlog.SEISMLAT,y1030seismlog.SEISMLONG,y1030seismlog.ZB_X,y1030seismlog.ZB_Y,y1030seismlog.SEIMSMS,y1030seismlog.SEISMINTN,y1030seismlog.SEISMACCU,y1030seismlog.SEISMDEP,y1030seismlog.REFLOCAT,y1030seismlog.NOTE FROM y1030seismlog WHERE y1030seismlog.SEIMSMS &lt;= 4.0 # SELECT y1030seismlog.ZB_X,y1030seismlog.ZB_Y,y1030seismlog.SEISMDATE FROM y1030seismlog WHERE y1030seismlog.SEIMSMS &lt;= 4.0" PNT_COLOR="6" PNT_WIDTH="5" PNT_HEIGH="5" PNT_SUBNO="1" PNT_TYPE="1" Type="{0AE0D4B7-F388-4576-9D53-8A85D78E40B6}" Name="震级&lt;=Ms.4.076" DisplayName="震级&lt;=Ms.4.0" Visible="false" Selected="true" />
+                        <Element RELSQL="SELECT y1030seismlog.SEISMID,y1030seismlog.PREVID,y1030seismlog.SEISMDATE,y1030seismlog.SEISMTIME,y1030seismlog.SEISMLAT,y1030seismlog.SEISMLONG,y1030seismlog.ZB_X,y1030seismlog.ZB_Y,y1030seismlog.SEIMSMS,y1030seismlog.SEISMINTN,y1030seismlog.SEISMACCU,y1030seismlog.SEISMDEP,y1030seismlog.REFLOCAT,y1030seismlog.NOTE FROM y1030seismlog WHERE y1030seismlog.SEIMSMS &gt; 4.0 # SELECT y1030seismlog.ZB_X,y1030seismlog.ZB_Y,y1030seismlog.SEISMTIME FROM y1030seismlog WHERE y1030seismlog.SEIMSMS &gt; 4.0" PNT_COLOR="6" PNT_WIDTH="15" PNT_HEIGH="15" PNT_SUBNO="1" PNT_TYPE="1" Type="{0AE0D4B7-F388-4576-9D53-8A85D78E40B6}" Name="震级&gt;Ms.4.076" DisplayName="震级&gt;Ms.4.0" Visible="false" Selected="true" />
+                    </Elements>
+                </Container>
+                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地质图件26" DispName="地质图件" Visible="false" Selected="false">
+                    <Children />
+                    <Elements>
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\基岩地质图\map\基岩地质图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1:5万基岩地质图52" DisplayName="1:5万基岩地质图" Visible="false" Selected="true" />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地震局图件\地震构造图\地震构造.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地震构造图188" DisplayName="地震构造图" Visible="false" Selected="true" />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地震局图件\新构造\新构造.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="新构造图189" DisplayName="新构造图" Visible="false" Selected="true" />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\基岩地质图\map\基岩地质图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地质剖面图56" DisplayName="地质剖面图" Visible="false" Selected="true" />
+                    </Elements>
+                </Container>
+            </Children>
+            <Elements>
+                <Element RELSQL="" PNT_COLOR="5" PNT_WIDTH="5" PNT_HEIGH="5" PNT_SUBNO="1" PNT_TYPE="1" Type="{1C68C318-70BB-4b56-8A45-6419DC14A365}" Name="基岩钻孔4" DisplayName="基岩钻孔" Visible="false" Selected="true" />
+            </Elements>
+        </Container>
+        <Container Type="{8FC19FDD-5D5B-45f2-A1F9-E4CBBDD37CD5}" Name="第四纪地质4" DispName="第四纪地质" Visible="false" Selected="false">
+            <Children>
+                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地质图件27" DispName="地质图件" Visible="false" Selected="false">
+                    <Children />
+                    <Elements>
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\第四纪地质\第四纪SH\第四纪.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="第四纪地质图54" DisplayName="第四纪地质图" Visible="false" Selected="true" />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\第四纪地质\第四纪SH\第四纪.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="不同时期岩相古地理图53" DisplayName="不同时期岩相古地理图" Visible="false" Selected="true" />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\第四纪地质\第四纪SH\第四纪.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地质剖面图55" DisplayName="地质剖面图" Visible="false" Selected="true" />
+                    </Elements>
+                </Container>
+            </Children>
+            <Elements>
+                <Element RELSQL="" PNT_COLOR="5" PNT_WIDTH="5" PNT_HEIGH="5" PNT_SUBNO="1" PNT_TYPE="1" Type="{C36C727F-6C5E-4bab-A1CE-1BB79DADC689}" Name="第四纪钻孔5" DisplayName="第四纪钻孔" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="E:\测试数据\关联剖面\dd\sect.MPJ" Type="{911ED29F-B03D-4806-A397-6460AA973019}" Name="关联剖面84" DisplayName="关联剖面" Visible="false" Selected="true" />
+            </Elements>
+        </Container>
+        <Container Type="{8FC19FDD-5D5B-45f2-A1F9-E4CBBDD37CD5}" Name="水文地质2" DispName="水文地质" Visible="false" Selected="false">
+            <Children>
+                <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="地下水深井9" DispName="地下水深井" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="当前开采井10" DispName="当前开采井" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="潜水含水层14" DisplayName="潜水含水层" Visible="false" Selected="true" OBJCODE="8012111         -1              1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="微承压含水层15" DisplayName="微承压含水层" Visible="false" Selected="true" OBJCODE="8012111         0               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第一承压含水层16" DisplayName="第一承压含水层" Visible="false" Selected="true" OBJCODE="8012111         1               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第二承压含水层17" DisplayName="第二承压含水层" Visible="false" Selected="true" OBJCODE="8012111         2               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第三承压含水层18" DisplayName="第三承压含水层" Visible="false" Selected="true" OBJCODE="8012111         3               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第四承压含水层19" DisplayName="第四承压含水层" Visible="false" Selected="true" OBJCODE="8012111         4               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第五承压含水层20" DisplayName="第五承压含水层" Visible="false" Selected="true" OBJCODE="8012111         5               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="基岩裂隙水21" DisplayName="基岩裂隙水" Visible="false" Selected="true" OBJCODE="8012111         6               1               " />
+                            </Elements>
+                        </Container>
+                        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="历史开采井21" DispName="历史开采井" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="潜水含水层49" DisplayName="潜水含水层" Visible="false" Selected="true" OBJCODE="8012111         -1              0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="微承压含水层55" DisplayName="微承压含水层" Visible="false" Selected="true" OBJCODE="8012111         0               0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第一承压含水层50" DisplayName="第一承压含水层" Visible="false" Selected="true" OBJCODE="8012111         1               0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第二承压含水层51" DisplayName="第二承压含水层" Visible="false" Selected="true" OBJCODE="8012111         2               0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第三承压含水层52" DisplayName="第三承压含水层" Visible="false" Selected="true" OBJCODE="8012111         3               0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第四承压含水层53" DisplayName="第四承压含水层" Visible="false" Selected="true" OBJCODE="8012111         4               0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第五承压含水层54" DisplayName="第五承压含水层" Visible="false" Selected="true" OBJCODE="8012111         5               0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="基岩裂隙水56" DisplayName="基岩裂隙水" Visible="false" Selected="true" OBJCODE="8012111         6               0               " />
+                            </Elements>
+                        </Container>
+                    </Children>
+                    <Elements />
+                </Container>
+                <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="地下水动态14" DispName="地下水位观测井" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="当前开采井15" DispName="当前水位井" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="微承压含水层58" DisplayName="微承压含水层" Visible="false" Selected="true" OBJCODE="80121121        0               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第三承压含水层61" DisplayName="第三承压含水层" Visible="false" Selected="true" OBJCODE="80121121        3               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第四承压含水层62" DisplayName="第四承压含水层" Visible="false" Selected="true" OBJCODE="80121121        4               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第二承压含水层60" DisplayName="第二承压含水层" Visible="false" Selected="true" OBJCODE="80121121        2               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第五承压含水层63" DisplayName="第五承压含水层" Visible="false" Selected="true" OBJCODE="80121121        5               1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="潜水含水层56" DisplayName="潜水含水层" Visible="false" Selected="true" OBJCODE="80121121        -1              1               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="第一承压含水层59" DisplayName="第一承压含水层" Visible="false" Selected="true" OBJCODE="80121121        1               1               " />
+                            </Elements>
+                        </Container>
+                    </Children>
+                    <Elements />
+                </Container>
+                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水文地质图件16" DispName="水文地质图件" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="综合水文地质图23" DispName="综合水文地质图" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element 图件类型="0" 图件ID="0" 图件路径="" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="第二含水层44" DisplayName="第二含水层" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="第四含水层46" DisplayName="第四含水层" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="第一含水层43" DisplayName="第一含水层" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="第五含水层47" DisplayName="第五含水层" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="第三含水层45" DisplayName="第三含水层" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水位变幅图24" DispName="水位变幅图" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element 图件类型="0" 图件ID="0" 图件路径="" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1962-196548" DisplayName="1962-1965" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                    </Children>
+                    <Elements />
+                </Container>
+            </Children>
+            <Elements>
+                <Element RELSQL="" PNT_COLOR="2" PNT_WIDTH="5" PNT_HEIGH="5" PNT_SUBNO="1" PNT_TYPE="1" Type="{3D92D499-3877-4205-9E3A-0F2DE0C7E3C6}" Name="水文地质钻孔3" DisplayName="水文地质钻孔" Visible="false" Selected="true" />
+            </Elements>
+        </Container>
+        <Container Type="{8FC19FDD-5D5B-45f2-A1F9-E4CBBDD37CD5}" Name="工程地质1" DispName="工程地质" Visible="false" Selected="false">
+            <Children>
+                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="工程地质图件8" DispName="工程地质图件" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地基土层分布图16" DispName="地基土层分布图" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\工程地质分区图\工程地质分区.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="工程地质分区22" DisplayName="工程地质分区图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\②1层等值线\②1层标高\②1层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="②1层埋深等值线图22" DisplayName="②1层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\②1层等值线\②1层厚度\②1层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="②1层厚度等值线图23" DisplayName="②1层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\②3层等值线\②3层标高\②3层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="②3层埋深等值线图22" DisplayName="②3层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\②3层等值线\②3层厚度\②3层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="②3层厚度等值线图23" DisplayName="②3层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\③+④层等值线\③+④层标高\③+④层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="③+④层埋深等值线图24" DisplayName="③+④层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\③+④层等值线\③+④层厚度\③+④层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="③+④层厚度等值线图25" DisplayName="③+④层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑤层等值线\⑤层标高\⑤层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑤层埋深等值线图22" DisplayName="⑤层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑤层等值线\⑤层厚度\⑤层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑤层厚度等值线图23" DisplayName="⑤层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑤2层等值线\⑤2层标高\⑤2层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑤2层埋深等值线图24" DisplayName="⑤2层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑤2层等值线\⑤2层厚度\⑤2层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑤2层厚度等值线图25" DisplayName="⑤2层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑥层等值线\⑥层标高\⑥层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑥层埋深等值线图24" DisplayName="⑥层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑥层等值线\⑥层厚度\⑥层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑥层厚度等值线图25" DisplayName="⑥层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑦层等值线\⑦层标高\⑦层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑦层埋深等值线图22" DisplayName="⑦层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑦层等值线\⑦层厚度\⑦层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑦层厚度等值线图23" DisplayName="⑦层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑧层等值线\⑧层标高\⑧层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑧层埋深等值线图22" DisplayName="⑧层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑧层等值线\⑧层厚度\⑧层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑧层厚度等值线图23" DisplayName="⑧层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑧2-1层等值线\⑧2-1层标高\⑧2-1层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑧2-1层埋深等值线图24" DisplayName="⑧2-1层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑧2-1层等值线\⑧2-1层厚度\⑧2-1层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑧2-1层厚度等值线图25" DisplayName="⑧2-1层厚度等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑨层等值线\⑨层标高\⑨层标高.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑨层埋深等值线图22" DisplayName="⑨层埋深等值线图" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\⑨层等值线\⑨层厚度\⑨层厚度.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="⑨层厚度等值线图23" DisplayName="⑨层厚度等值线图" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                    </Children>
+                    <Elements>
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\暗浜分布\暗浜演示.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="暗浜分布图22" DisplayName="暗浜分布图" Visible="false" Selected="true" />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\1万工程\实际材料图\中心城区实际材料图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="工程地质剖面线401" DisplayName="实际材料图(1:1万)" Visible="false" Selected="true" />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\工程地质\5万工程\实际材料图\全市工程地质调查实际材料图.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="工程地质剖面线(1:5万)402" DisplayName="实际材料图(1:5万)" Visible="false" Selected="true" />
+                    </Elements>
+                </Container>
+            </Children>
+            <Elements>
+                <Element PNT_COLOR="13" PNT_WIDTH="5" PNT_HEIGH="5" PNT_SUBNO="1" PNT_TYPE="1" Type="{4C0182CE-777B-48b6-8472-788A3D6DC1F6}" Name="原始钻孔2" DisplayName="原始钻孔" Visible="false" Selected="true" />
+                <Element RELSQL="" PNT_COLOR="6" PNT_WIDTH="5" PNT_HEIGH="5" PNT_SUBNO="1" PNT_TYPE="1" Type="{0AE0D4B7-F388-4576-9D53-8A85D78E40B6}" Name="原始钻孔(旧格式)187" DisplayName="原始钻孔(旧格式)" Visible="false" Selected="true" />
+                <Element RELSQL="" EG_SOIL_PNT_COLOR="5" EG_SOIL_PNT_WIDTH="5" EG_SOIL_PNT_HEIGH="5" EG_SOIL_PNT_SUBNO="18" EG_SOIL_PNT_TYPE="1" EG_STATIC_PNT_COLOR="5" EG_STATIC_PNT_WIDTH="5" EG_STATIC_PNT_HEIGH="5" EG_STATIC_PNT_SUBNO="1" EG_STATIC_PNT_TYPE="1" EG_STAPEN_PNT_COLOR="5" EG_STAPEN_PNT_WIDTH="5" EG_STAPEN_PNT_HEIGH="5" EG_STAPEN_PNT_SUBNO="1" EG_STAPEN_PNT_TYPE="1" EG_SUBDPEN_PNT_COLOR="6" EG_SUBDPEN_PNT_WIDTH="5" EG_SUBDPEN_PNT_HEIGH="5" EG_SUBDPEN_PNT_SUBNO="1" EG_SUBDPEN_PNT_TYPE="1" EG_PUMP_PNT_COLOR="6" EG_PUMP_PNT_WIDTH="5" EG_PUMP_PNT_HEIGH="5" EG_PUMP_PNT_SUBNO="1" EG_PUMP_PNT_TYPE="1" EG_WATERPEN_PNT_COLOR="6" EG_WATERPEN_PNT_WIDTH="5" EG_WATERPEN_PNT_HEIGH="5" EG_WATERPEN_PNT_SUBNO="1" EG_WATERPEN_PNT_TYPE="1" EG_AFFU_PNT_COLOR="6" EG_AFFU_PNT_WIDTH="5" EG_AFFU_PNT_HEIGH="5" EG_AFFU_PNT_SUBNO="1" EG_AFFU_PNT_TYPE="1" EG_PRESSPEN_PNT_COLOR="6" EG_PRESSPEN_PNT_WIDTH="5" EG_PRESSPEN_PNT_HEIGH="5" EG_PRESSPEN_PNT_SUBNO="1" EG_PRESSPEN_PNT_TYPE="1" EG_IDPENPEN_PNT_COLOR="6" EG_IDPENPEN_PNT_WIDTH="5" EG_IDPENPEN_PNT_HEIGH="5" EG_IDPENPEN_PNT_SUBNO="1" EG_IDPENPEN_PNT_TYPE="1" EG_SMALLPEN_PNT_COLOR="6" EG_SMALLPEN_PNT_WIDTH="5" EG_SMALLPEN_PNT_HEIGH="5" EG_SMALLPEN_PNT_SUBNO="1" EG_SMALLPEN_PNT_TYPE="1" EG_CREEKPEN_PNT_COLOR="6" EG_CREEKPEN_PNT_WIDTH="5" EG_CREEKPEN_PNT_HEIGH="5" EG_CREEKPEN_PNT_SUBNO="1" EG_CREEKPEN_PNT_TYPE="1" Type="{964CBFCB-80AC-40d7-8533-651712926017}" Name="工程控制性钻孔63" DisplayName="工程控制性钻孔" Visible="false" Selected="true" />
+            </Elements>
+        </Container>
+        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="地面沉降5" DispName="地面沉降" Visible="false" Selected="false">
+            <Children>
+                <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="地面沉降监测站3" DispName="地面沉降监测" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="标组4" DispName="标组" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="自动观测站253" DisplayName="自动观测站" Visible="false" Selected="true" OBJCODE="" />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="人工观测站253" DisplayName="人工观测站" Visible="false" Selected="true" OBJCODE="" />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="基岩标8" DisplayName="基岩标" Visible="false" Selected="true" OBJCODE="80121132        -1              0               " />
+                            </Elements>
+                        </Container>
+                        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="GPS监测13" DispName="GPS监测" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="基准站18" DisplayName="基准站" Visible="false" Selected="true" OBJCODE="8012117         80121171        0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="一级网19" DisplayName="一级网" Visible="false" Selected="true" OBJCODE="8012117         80121172        0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="二级网20" DisplayName="二级网" Visible="false" Selected="true" OBJCODE="8012117         80121173        0               " />
+                            </Elements>
+                        </Container>
+                        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="水准监测网22" DispName="水准监测网" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="水准点分布254" DisplayName="水准点分布" Visible="false" Selected="true" OBJCODE="8012116         -1              0               " />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\十一五规划\5万SZD等值线上海\SZD.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="水准监测点规划图42" DisplayName="水准监测点规划图" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                    </Children>
+                    <Elements />
+                </Container>
+                <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="重大工程监测11" DispName="重大工程监测" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{2F7D13BF-85F9-40a6-A956-5B25629BFE67}" Name="轨道交通12" DispName="轨道交通" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="轨道交通一号线13" DisplayName="轨道交通一号线" Visible="false" Selected="true" OBJCODE="8012118         801211831       0               " />
+                                <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="轨道交通二号线14" DisplayName="轨道交通二号线" Visible="false" Selected="true" OBJCODE="8012118         801211832       0               " />
+                            </Elements>
+                        </Container>
+                    </Children>
+                    <Elements>
+                        <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="高架15" DisplayName="高架" Visible="false" Selected="true" OBJCODE="8012118         80121184        0               " />
+                        <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="防汛墙17" DisplayName="防汛墙" Visible="false" Selected="true" OBJCODE="8012118         80121186        0               " />
+                        <Element 图件类型="0" 图件ID="0" 图件路径="" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="西气东输403" DisplayName="西气东输" Visible="false" Selected="true" />
+                        <Element Type="{2515E948-CA96-4e3f-8266-D6AC2A91C162}" Name="苏州河桥梁16" DisplayName="苏州河桥梁" Visible="false" Selected="true" OBJCODE="8012118         80121185        0               " />
+                    </Elements>
+                </Container>
+                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地质图件17" DispName="地质图件" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="历史阶段21" DispName="历史阶段" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\2006\2006年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="200641" DisplayName="2006" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\2005\2005年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="200541" DisplayName="2005" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\2004\2004年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="200441" DisplayName="2004" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\2003\2003年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="200341" DisplayName="2003" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\2002\2002年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="200241" DisplayName="2002" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\2001\2001年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="200141" DisplayName="2001" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\2000\2000年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="200041" DisplayName="2000" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\1999\1999年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199941" DisplayName="1999" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\1998\1998年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199841" DisplayName="1998" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\1997\1997年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199741" DisplayName="1997" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\96-05年度\1996\1996年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199641" DisplayName="1996" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh95年\MAP\95年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199541" DisplayName="1995" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh94年\MAP\94年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199441" DisplayName="1994" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh93年\MAP\93年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199341" DisplayName="1993" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh92年\MAP\92年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199241" DisplayName="1992" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh91年\MAP\91年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199141" DisplayName="1991" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh90年\MAP\90年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="199041" DisplayName="1990" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh89年\MAP\89年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198941" DisplayName="1989" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh88年\MAP\88年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198841" DisplayName="1988" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh87年\MAP\87年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198741" DisplayName="1987" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh86年\MAP\86年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198641" DisplayName="1986" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh85年\MAP\85年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198541" DisplayName="1985" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh84年\MAP\84年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198441" DisplayName="1984" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh83年\MAP\83年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198341" DisplayName="1983" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh82年\MAP\82年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198241" DisplayName="1982" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh81年\MAP\81年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198141" DisplayName="1981" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh80年\MAP\80年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="198041" DisplayName="1980" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh79年\MAP\79年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197941" DisplayName="1979" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh78年\MAP\78年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197841" DisplayName="1978" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh77年\MAP\77年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197741" DisplayName="1977" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh76年\MAP\76年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197641" DisplayName="1976" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh75年\MAP\75年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197541" DisplayName="1975" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh74年\MAP\74年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197441" DisplayName="1974" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh73年\MAP\73年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197341" DisplayName="1973" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh72年\MAP\72年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197241" DisplayName="1972" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh71年\MAP\71年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197141" DisplayName="1971" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh70年\MAP\70年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="197041" DisplayName="1970" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh69年\MAP\69年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="196941" DisplayName="1969" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh68年\MAP\68年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="196841" DisplayName="1968" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh67年\MAP\67年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="196741" DisplayName="1967" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\历史\沉降等值线图SH1966-1995(公里网)\sh66年\MAP\66年.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="196640" DisplayName="1966" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="上海市域18" DispName="上海市域" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\市域\1995-2001\9521.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地面沉降等值线图(1996-2001)27" DisplayName="地面沉降等值线图(1996-2001)" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\市域\1980-1995\80-95.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地面沉降等值线图(1980-1995)26" DisplayName="地面沉降等值线图(1980-1995)" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="GPS数据20" DispName="GPS数据" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\GPS-水准点\2005gps50万sh\地质要素\04-05GPS等值线.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="2004-2005年38" DisplayName="2004-2005年" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\GPS-水准点\2004gps50万sh\地质要素\03-04GPS等值线.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="2003-2004年39" DisplayName="2003-2004年" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="中心城区19" DispName="中心城区" Visible="false" Selected="false">
+                            <Children />
+                            <Elements>
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\01-05\01-05.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="2001-200058" DisplayName="2001-2005" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\96-20\96-20.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1996-200028" DisplayName="1996-2000" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\91-95\91-95.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1991-199529" DisplayName="1991-1995" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\86-90\86-90.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1986-199030" DisplayName="1986-1990" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\77-85\77-85.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1977-198529" DisplayName="1977-1985" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\72-76\72-76.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1972-197631" DisplayName="1972-1976" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\66-76\66-76.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1966-197632" DisplayName="1966-1976" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\66-71\66-71.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1966-197133" DisplayName="1966-1971" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\62-65\62-65.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1962-196534" DisplayName="1962-1965" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\57-61\57-61.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1957-196135" DisplayName="1957-1961" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\49-56\49-56.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1949-195636" DisplayName="1949-1956" Visible="false" Selected="true" />
+                                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地面沉降\中心城区阶段地面沉降\21-48\21-48.mpj" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1921-194837" DisplayName="1921-1948" Visible="false" Selected="true" />
+                            </Elements>
+                        </Container>
+                    </Children>
+                    <Elements />
+                </Container>
+            </Children>
+            <Elements />
+        </Container>
+        <Container ToolLinRadius="0" Type="{4EE5B961-12C8-4df9-A65C-A8EC12F36A57}" Name="地球化学1" DispName="地球化学" Visible="false" Selected="false">
+            <Children>
+                <Container Type="{31CAABD9-27F7-4956-B72E-596D4397FD53}" Name="地球化学水数据2" DispName="地球化学水数据" Visible="false" Selected="false">
+                    <Children />
+                    <Elements>
+                        <Element PntInfoSubno="24" PntInfoHeight="3" PntInfoWidth="3" PntInfoAngle="0" PntInfoIclr="7" Type="{17301EE7-B1CC-40fb-B456-7A4083C338AD}" Name="浅层水2" DisplayName="浅层水" Visible="false" Selected="true" />
+                        <Element PntInfoSubno="9" PntInfoHeight="4" PntInfoWidth="4" PntInfoAngle="0" PntInfoIclr="2" Type="{CD4682F2-E8D1-4928-A9E8-C3790E2BF34F}" Name="深层水3" DisplayName="深层水" Visible="false" Selected="true" />
+                    </Elements>
+                </Container>
+                <Container Type="{C08FC0C7-34EF-46b2-BAF7-E061F909E78B}" Name="地球化学土壤数据3" DispName="地球化学土壤数据" Visible="false" Selected="false">
+                    <Children />
+                    <Elements>
+                        <Element PntInfoSubno="34" PntInfoHeight="6" PntInfoWidth="6" PntInfoAngle="0" PntInfoIclr="104" Type="{9D67E856-7222-4194-BA6E-C0FF73E98167}" Name="深层土壤5" DisplayName="深层土壤" Visible="false" Selected="true" />
+                        <Element PntInfoSubno="24" PntInfoHeight="4" PntInfoWidth="4" PntInfoAngle="0" PntInfoIclr="1" Type="{07EA0945-7821-4a27-846D-0C41DAD8B8BD}" Name="浅层土壤4" DisplayName="浅层土壤" Visible="false" Selected="true" />
+                    </Elements>
+                </Container>
+                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地球化学图件55" DispName="地球化学图件" Visible="false" Selected="false">
+                    <Children>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="基础图件56" DispName="基础图件" Visible="false" Selected="false">
+                            <Children>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="表层土壤58" DispName="表层土壤" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ag表\Ag表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ag255" DisplayName="Ag(银)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Al表\Al表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Al255" DisplayName="Al(铝)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\As表\As表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="As255" DisplayName="As(砷)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Au表\Au表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Au255" DisplayName="Au(金)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ba表\Ba表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ba255" DisplayName="Ba(钡)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Be表\Be表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Be255" DisplayName="Be(铍)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Bi表\Bi表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Bi255" DisplayName="Bi(铋)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Br表\Br表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Br255" DisplayName="Br(溴)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\B表\B表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="B255" DisplayName="B(硼)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ca表\Ca表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ca255" DisplayName="Ca(钙)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Cd表\Cd表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cd255" DisplayName="Cd(镉)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ce表\Ce表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ce255" DisplayName="Ce(铈)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Cl表\Cl表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cl255" DisplayName="Cl(氯)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Co表\Co表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Co255" DisplayName="Co(钴)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Cr表\Cr表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cr255" DisplayName="Cr(铬)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Cu表\Cu表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cu255" DisplayName="Cu(铜)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\C表\C表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="C255" DisplayName="C(碳)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Fe表\Fe表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Fe255" DisplayName="Fe(铁)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\F表\F表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="F255" DisplayName="F(氟)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ga表\Ga表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ga255" DisplayName="Ga(镓)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ge表\Ge表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ge255" DisplayName="Ge(锗)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Hg表\Hg表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Hg255" DisplayName="Hg(汞)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\I表\I表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="I255" DisplayName="I(碘)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\K表\K表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="K255" DisplayName="K(钾)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\La表\La表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="La255" DisplayName="La(镧)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Li表\Li表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Li255" DisplayName="Li(锂)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Mg表\Mg表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Mg255" DisplayName="Mg(镁)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Mn表\Mn表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Mn255" DisplayName="Mn(锰)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Mo表\Mo表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Mo255" DisplayName="Mo(钼)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Na表\Na表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Na255" DisplayName="Na(钠)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Nb表\Nb表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Nb255" DisplayName="Nb(铌)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ni表\Ni表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ni255" DisplayName="Ni(镍)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\N表\N表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="N255" DisplayName="N(氮)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Org-C表\Org-C表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="OrgC255" DisplayName="OrgC(有机碳)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Pb表\Pb表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Pb255" DisplayName="Pb(铅)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ph表\Ph表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="PH255" DisplayName="PH(酸碱度)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\P表\P表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="P255" DisplayName="P(磷)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Rb表\Rb表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Rb255" DisplayName="Rb(铷)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Sb表\Sb表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sb255" DisplayName="Sb(锑)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Sc表\Sc表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sc255" DisplayName="Sc(钪)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Se表\Se表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Se255" DisplayName="Se(硒)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Si表\Si表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Si255" DisplayName="Si(硅)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Sn表\Sn表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sn255" DisplayName="Sn(锡)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Sr表\Sr表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sr255" DisplayName="Sr(锶)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\S表\S表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="S255" DisplayName="S(硫)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Th表\Th表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Th255" DisplayName="Th(钍)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Ti表\Ti表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ti255" DisplayName="Ti(钛)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Tl表\Tl表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Tl255" DisplayName="Tl(铊)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\U表\U表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="U255" DisplayName="U(铀)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\V表\V表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="V255" DisplayName="V(钒)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\W表\W表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="W255" DisplayName="W(钨)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Y表\Y表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Y255" DisplayName="Y(钇)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Zn表\Zn表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Zn255" DisplayName="Zn(锌)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\表土层化探\Zr表\Zr表.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Zr255" DisplayName="Zr(锆)" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="深层土壤59" DispName="深层土壤" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ag深\Ag深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ag255d" DisplayName="Ag(银)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Al深\Al深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Al255d" DisplayName="Al(铝)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\As深\As深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="As255d" DisplayName="As(砷)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Au深\Au深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Au255d" DisplayName="Au(金)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ba深\Ba深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ba255d" DisplayName="Ba(钡)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Be深\Be深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Be255d" DisplayName="Be(铍)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Bi深\Bi深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Bi255d" DisplayName="Bi(铋)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Br深\Br深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Br255d" DisplayName="Br(溴)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\B深\B深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="B255d" DisplayName="B(硼)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ca深\Ca深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ca255d" DisplayName="Ca(钙)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Cd深\Cd深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cd255d" DisplayName="Cd(镉)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ce深\Ce深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ce255d" DisplayName="Ce(铈)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Cl深\Cl深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cl255d" DisplayName="Cl(氯)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Co深\Co深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Co255d" DisplayName="Co(钴)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Cr深\Cr深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cr255d" DisplayName="Cr(铬)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Cu深\Cu深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cu255d" DisplayName="Cu(铜)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\C深\C深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="C255d" DisplayName="C(碳)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Fe深\Fe深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Fe255d" DisplayName="Fe(铁)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\F深\F深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="F255d" DisplayName="F(氟)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ga深\Ga深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ga255d" DisplayName="Ga(镓)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ge深\Ge深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ge255d" DisplayName="Ge(锗)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Hg深\Hg深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Hg255d" DisplayName="Hg(汞)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\I深\I深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="I255d" DisplayName="I(碘)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\K深\K深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="K255d" DisplayName="K(钾)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\La深\La深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="La255d" DisplayName="La(镧)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Li深\Li深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Li255d" DisplayName="Li(锂)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Mg深\Mg深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Mg255d" DisplayName="Mg(镁)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Mn深\Mn深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Mn255d" DisplayName="Mn(锰)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Mo深\Mo深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Mo255d" DisplayName="Mo(钼)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Na深\Na深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Na255d" DisplayName="Na(钠)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Nb深\Nb深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Nb255d" DisplayName="Nb(铌)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ni深\Ni深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ni255d" DisplayName="Ni(镍)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\N深\N深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="N255d" DisplayName="N(氮)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Org-C深\Org-C深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="OrgC255d" DisplayName="OrgC(有机碳)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Pb深\Pb深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Pb255d" DisplayName="Pb(铅)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ph深\Ph深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="PH255d" DisplayName="PH(酸碱度)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\P深\P深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="P255d" DisplayName="P(磷)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Rb深\Rb深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Rb255d" DisplayName="Rb(铷)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Sb深\Sb深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sb255d" DisplayName="Sb(锑)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Sc深\Sc深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sc255d" DisplayName="Sc(钪)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Se深\Se深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Se255d" DisplayName="Se(硒)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Si深\Si深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Si255d" DisplayName="Si(硅)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Sn深\Sn深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sn255d" DisplayName="Sn(锡)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Sr深\Sr深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Sr255d" DisplayName="Sr(锶)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\S深\S深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="S255d" DisplayName="S(硫)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Th深\Th深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Th255d" DisplayName="Th(钍)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Ti深\Ti深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ti255d" DisplayName="Ti(钛)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Tl深\Tl深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Tl255d" DisplayName="Tl(铊)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\U深\U深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="U255d" DisplayName="U(铀)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\V深\V深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="V255d" DisplayName="V(钒)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\W深\W深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="W255d" DisplayName="W(钨)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Y深\Y深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Y255d" DisplayName="Y(钇)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Zn深\Zn深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Zn255d" DisplayName="Zn(锌)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\深土层化探\Zr深\Zr深.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Zr255d" DisplayName="Zr(锆)" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                            </Children>
+                            <Elements />
+                        </Container>
+                        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="评价图件57" DispName="评价图件" Visible="false" Selected="false">
+                            <Children>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="污染评价60" DispName="污染评价(表层土壤)" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\综合质污\综18污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="综合质污363" DisplayName="综合污染现状" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Ag质污\Ag污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="银(Ag)污染363" DisplayName="银(Ag)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\As质污\As污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="砷(As)污染363" DisplayName="砷(As)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Au质污\Au污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="金(Au)污染363" DisplayName="金(Au)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Bi质污\Bi污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="铋(Bi)污染363" DisplayName="铋(Bi)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Cd质污\Cd污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="镉(Cd)污染363" DisplayName="镉(Cd)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Cr质污\Cr污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="铬(Cr)污染363" DisplayName="铬(Cr)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Cu质污\Cu污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="铜(Cu)污染363" DisplayName="铜(Cu)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\C质污\C污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="碳(C)污染363" DisplayName="碳(C)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\F质污\F污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="氟(F)污染363" DisplayName="氟(F)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Hg质污\Hg污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="汞(Hg)污染363" DisplayName="汞(Hg)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Mo质污\Mo污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="钼(Mo)污染363" DisplayName="钼(Mo)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\OrgC质污\OrgC污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="OrgC污染363" DisplayName="有机碳(OrgC)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Pb质污\Pb污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="铅(Pb)污染363" DisplayName="铅(Pb)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\P质污\P污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="磷(P)污染363" DisplayName="磷(P)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Sb质污\Sb污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="锑(Sb)污染363" DisplayName="锑(Sb)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Sn质污\Sn污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="锌(Sn)污染363" DisplayName="锌(Sn)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\S质污\S污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="硫(S)污染363" DisplayName="硫(S)污染" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\污染评价\Zn质污\Zn污染.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="锌(Zn)污染363" DisplayName="锌(Zn)污染" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="有益元素丰缺61" DispName="有益元素丰缺评价(表层土壤)" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\B\B丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="硼(B)丰益364" DisplayName="硼(B)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\Cu\Cu丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="铜(Cu)丰益364" DisplayName="铜(Cu)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\K\K丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="钾(K)丰益364" DisplayName="钾(K)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\Mg\Mg丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="镁(Mg)丰益364" DisplayName="镁(Mg)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\Mn\Mn丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="锰(Mn)丰益364" DisplayName="锰(Mn)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\Mo\Mo丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="钼(Mo)丰益364" DisplayName="钼(Mo)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\N\N丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="氮(N)丰益364" DisplayName="氮(N)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\P\P丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="磷(P)丰益364" DisplayName="磷(P)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\Si\Si丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="硅(Si)丰益364" DisplayName="硅(Si)丰缺" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\有益元素丰缺\Zn\Zn丰益.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="锌(Zn)丰益364" DisplayName="锌(Zn)丰缺" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                                <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="质量评价62" DispName="土壤环境质量评价" Visible="false" Selected="false">
+                                    <Children />
+                                    <Elements>
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\8综合质评\综质评价.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="综合质量评价365" DisplayName="综合质量评价(8元素)" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\As质评\As质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="As质评365" DisplayName="As质量评价" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\Cd质评\Cd质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cd质评365" DisplayName="Cd质量评价" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\Cr质评\Cr质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cr质评365" DisplayName="Cr质量评价" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\Cu质评\Cu质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Cu质评365" DisplayName="Cu质量评价" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\Hg质评\Hg质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Hg质评365" DisplayName="Hg质量评价" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\Ni质评\Ni质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Ni质评365" DisplayName="Ni质量评价" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\Pb质评\Pb质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Pb质评365" DisplayName="Pb质量评价" Visible="false" Selected="true" />
+                                        <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\地球化学\质量评价\Zn质评\Zn质评.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="Zn质评365" DisplayName="Zn质量评价" Visible="false" Selected="true" />
+                                    </Elements>
+                                </Container>
+                            </Children>
+                            <Elements />
+                        </Container>
+                    </Children>
+                    <Elements />
+                </Container>
+            </Children>
+            <Elements />
+        </Container>
+        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="河口海岸56" DispName="河口海岸" Visible="false" Selected="false">
+            <Children />
+            <Elements>
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\1917-1926\1917-1926.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1917-1926水深数据190" DisplayName="1917-1926水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\1950-1958\1950-1958.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1950-1958水深数据190" DisplayName="1950-1958水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\1963-1969\1963-1969.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1963-1969水深数据190" DisplayName="1963-1969水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\1971-1979\1971-1979.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1971-1979水深数据190" DisplayName="1971-1979水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\1981-1983\1981-1983.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1981-1983水深数据190" DisplayName="1981-1983水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\1985-1987\1985-1987.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1985-1987水深数据190" DisplayName="1985-1987水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\1994-1999\1994-1999.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="1994-1999水深数据190" DisplayName="1994-1999水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\2000-2005\2000-2005.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="2000-2005水深数据190" DisplayName="2000-2005水深数据" Visible="false" Selected="true" />
+                <Element 图件类型="0" 图件ID="0" 图件路径="\\192.168.18.112\dztj\海岸带数据\2004\2004.MPJ" Type="{A5CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="2004水深数据190" DisplayName="2004水深数据" Visible="false" Selected="true" />
+            </Elements>
+        </Container>
+        <Container Type="{369257D0-DEF2-4600-B3A9-B985041D07C5}" Name="地下管线35" DispName="地下管线" Visible="false" Selected="false" 工程文件名="E:\测试数据\上海管线\MAPGIS综合管网示范数据\demo.mpj">
+            <Children />
+            <Elements />
+        </Container>
+        <Container Type="{P4CB8496-AD95-410f-BDC3-02C5D4797A56}" Name="地下构筑物39" DispName="地下构筑物" Visible="false" Selected="false">
+            <Children />
+            <Elements />
+        </Container>
+    </Children>
+    <Elements />
+</RootContainer>
