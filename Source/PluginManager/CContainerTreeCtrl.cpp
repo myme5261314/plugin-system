@@ -11,6 +11,7 @@
 #include "TreeElementManager.h"
 
 #include "AddContainerDlg.h"
+#include "AddElementDlg.h"
 
 #define DYNAMIC_MENU_ID_BASE 48000
 #define DYNAMIC_MENU_MAX_NUM 1000
@@ -49,12 +50,14 @@ BEGIN_MESSAGE_MAP(CContainerTreeCtrl, CTreeCtrl)
 	//目前暂时使用静态菜单.
 	ON_COMMAND_RANGE(ID_CREATE_CONTAINER, ID_CREATE_CONTAINER+DYNAMIC_MENU_MAX_NUM, OnCommandDynamicMenu)
 	ON_UPDATE_COMMAND_UI_RANGE(ID_CREATE_CONTAINER, ID_CREATE_CONTAINER+DYNAMIC_MENU_MAX_NUM, OnUpdateDynamicMenu)
+
+
 	
 	//后面考虑菜单的动态生成!!!
 	//ON_COMMAND_RANGE(DYNAMIC_MENU_ID_BASE, DYNAMIC_MENU_ID_BASE+DYNAMIC_MENU_MAX_NUM, OnCommandDynamicMenu)
 	//ON_UPDATE_COMMAND_UI_RANGE(DYNAMIC_MENU_ID_BASE, DYNAMIC_MENU_ID_BASE+DYNAMIC_MENU_MAX_NUM, OnUpdateDynamicMenu)	
 		
-	ON_COMMAND(ID_APPEND_ELEMENT, &CContainerTreeCtrl::OnAppendElement)
+
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -362,11 +365,69 @@ void CContainerTreeCtrl::OnCommandDynamicMenu( UINT nID )
 
 	switch(nID)
 	{
+		/*
+		 *	容器相关菜单操作
+		 */
 		case ID_CREATE_CONTAINER:	 //创建容器.
 			AddContainerToTree(hItem);
 			break;
 
 		case ID_SHOW_ALL_CONTAINER:  //显示所有容器.
+			break;
+		
+		case ID_HIDE_ALL_CONTAINER:	 //隐藏所有容器.
+			break;
+
+		case ID_DELETE_ALL_CONTAINER://删除所有容器.
+			break;
+
+		case ID_SHOW_CONTAINER:		 //显示容器.
+			break;
+
+		case ID_HIDE_CONTAINER:		 //隐藏容器.
+			break;
+
+		case ID_SELECT_CONTAINER:	 //选择容器.
+			break;
+
+		case ID_UNSELECT_CONTAINER:	 //取消选择容器.
+			break;
+			
+		case ID_EDIT_CONTAINER_ATTR: //容器属性选项.
+			break;
+		
+		/*
+		 *	元素相关操作菜单
+		 */
+		case ID_APPEND_ELEMENT:		 //添加元素.
+			AddElementToTree(hItem);
+			break;
+
+		case ID_DELETE_ALL_ELEMENTS: //删除所有元素.
+			break;
+
+		case ID_RELATE_DATA:		 //关联元素数据.
+			break;
+
+		case ID_UNRELATE_DATA:		 //取消元素关联数据.
+			break;
+		
+		case ID_DELETE_ELEMENT:		 //删除元素.
+			break;
+			
+		case ID_SHOW_ELEMENT:		 //显示元素.
+			break;
+			
+		case ID_HIDE_ELEMENT:		 //隐藏元素.
+			break;
+			
+		case ID_SELECT_ELEMENT:		 //选择元素.
+			break;
+						
+		case ID_UNSELECT_ELEMENT:	 //取消选择元素.
+			break;
+
+		case ID_EDIT_ELEMENT_ATTR:	 //元素属性选项.
 			break;
 
 		default:
@@ -496,7 +557,90 @@ bool CContainerTreeCtrl::ShowAllContainers(HTREEITEM hTreeItem)
 
 	return true;
 }
-void CContainerTreeCtrl::OnAppendElement()
+
+
+/*
+ *	添加元素到当前树结构中（元素必须位于容器的下一层）。
+ */
+bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 {
 	// TODO: 在此添加命令处理程序代码
+
+	/*
+	 *	异常判断
+	 */
+	if(!m_pTreeInfoStru->m_pElementManager) return false;
+	
+
+	/*
+	 *	貌似是什么要用到DLL里面的各种资源，什么字符串等的时候要加下面这一句。
+	 */
+	AFX_MANAGE_STATE(AfxGetStaticModuleState());
+
+	/*
+	 *	弹出一个提示框，提示用户输入元素名称。
+	 */
+	CAddElementDlg dlg(m_pTreeInfoStru->m_pElementManager, this);
+	if(dlg.DoModal()!=IDOK) return false;
+
+	/*
+	 *	各种需要用到的指针和变量。
+	 */
+	CDataElementManager *pElementManager=m_pTreeInfoStru->m_pElementManager;
+	String				 ElementName=dlg.m_ElementName;
+	PLUGIN_GUID          ContainerGuid=((CDataContainer *)GetItemData(hParentItem))->GetFactoryGuid();
+	CDataElement		*pElement=NULL;
+	bool                 bResult=false;
+
+	/*
+	 *	创建元素
+	 */
+	pElement=pElementManager->AppendElement(ContainerGuid, ElementName, false);
+	if(!pElement) return false;
+
+	/*
+	 *	树形控件前台显示部分
+	 */
+	//插入树形节点.
+	TVINSERTSTRUCT insert;
+	TVITEM         item;
+	HTREEITEM      hInsertItem=NULL;
+
+	::ZeroMemory(&insert, sizeof(TVINSERTSTRUCT));
+	::ZeroMemory(&item, sizeof(TVITEM));
+
+	item.mask = TVIF_IMAGE|TVIF_TEXT|TVIF_SELECTEDIMAGE|TVIF_PARAM;
+	item.pszText = (char *)pElement->GetName().c_str();    //容器名.
+	item.iImage  = m_pTreeInfoStru->m_ItemImageNo[NODE_IMAGE];                   //未选中时位图的索引. 
+	item.iSelectedImage = m_pTreeInfoStru->m_ItemImageNo[NODE_SELECTED_IMAGE];   //选中时位图的索引.
+	item.lParam = (LPARAM)pElement;                                            //记录容器指针.
+	insert.hParent = hParentItem;
+	insert.hInsertAfter = TVI_LAST;
+	::CopyMemory( &(insert.item), &item, sizeof(TVITEM) );
+	// 插入容器.
+	hInsertItem=InsertItem(&insert);
+	if(!hInsertItem) goto END;
+	Expand(hParentItem, TVE_EXPAND);
+
+	//记录树形图形节点管理.
+	m_pTreeInfoStru->m_pTreeElementManager->AddTreeItem(pElement, hInsertItem);
+	bResult=true;
+
+
+	//新建元素的后台数据存储部分：
+	DWORD lParam=GetItemData(hParentItem);
+	if(lParam>0)
+	{
+		CDataContainer *pParentContainer=(CDataContainer *)lParam;
+		pParentContainer->AddElement(pElement);
+	}
+
+
+	/*
+	 *	发生错误，取消生成的元素，返回false
+	 */
+END:
+	if(!bResult) pElementManager->DeleteElement(pElement);
+
+	return bResult;
 }
