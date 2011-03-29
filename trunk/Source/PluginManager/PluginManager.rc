@@ -173,9 +173,9 @@ BEGIN
     GROUPBOX        "请输入容器名称",IDC_STATIC,6,7,169,31
 END
 
-IDD_DIALOG1 DIALOGEX 0, 0, 186, 93
+IDD_ADD_ELEMENT_DLG DIALOGEX 0, 0, 186, 93
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Dialog"
+CAPTION "添加元素"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "确定",IDOK,25,59,50,14
@@ -193,7 +193,7 @@ END
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO 
 BEGIN
-    IDD_DIALOG1, DIALOG
+    IDD_ADD_ELEMENT_DLG, DIALOG
     BEGIN
         LEFTMARGIN, 7
         RIGHTMARGIN, 179
@@ -299,6 +299,7 @@ BEGIN
     ID_RES50                "RES2"
     IDS_PROMPT0             "系统信息提示"
     IDS_STRING1             "请输入容器名称或者选择容器类型!"
+    IDS_STRING2             "请输入元素名称!"
 END
 
 #endif    // 中文(中华人民共和国) resources

@@ -218,10 +218,6 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\AddElementDlg.cpp"
-				>
-			</File>
-			<File
 				RelativePath="PluginManager.cpp"
 				>
 				<FileConfiguration
@@ -386,16 +382,24 @@
 						>
 					</File>
 				</Filter>
+				<Filter
+					Name="ÔªËØ¶Ô»°¿ò"
+					>
+					<File
+						RelativePath=".\AddElementDlg.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\AddElementDlg.h"
+						>
+					</File>
+				</Filter>
 			</Filter>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl"
 			>
-			<File
-				RelativePath=".\AddElementDlg.h"
-				>
-			</File>
 			<File
 				RelativePath="PluginManager.h"
 				>

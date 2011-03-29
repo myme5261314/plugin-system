@@ -8,7 +8,7 @@
 #define IDR_ELEMENT_MENU                3002
 #define IDC_LIST1                       3002
 #define IDD_ADD_CONTAINER_DLG           3003
-#define IDD_DIALOG1                     3005
+#define IDD_ADD_ELEMENT_DLG             3005
 #define ID_CREATE_CONTAINER             32771
 #define ID_DELETE_CONTAINER             32772
 #define ID_EDIT_CONTAINER_ATTR          32773
@@ -81,6 +81,7 @@
 #define ID_RES50                        32841
 #define IDS_PROMPT0                     32844
 #define IDS_STRING1                     32845
+#define IDS_STRING2                     32846
 
 // Next default values for new objects
 // 

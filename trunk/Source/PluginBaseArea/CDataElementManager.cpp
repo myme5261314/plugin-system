@@ -45,6 +45,7 @@ CDataElement* CDataElementManager::AppendElement(const PLUGIN_GUID& FactoryGuid,
 
 		pDataElement->Load();
 		m_ElementList[InstanceName] = pDataElement;
+		
 	}
 	else //同名元素已经存在，不允许!
 	{

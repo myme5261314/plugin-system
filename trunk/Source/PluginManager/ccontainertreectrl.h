@@ -97,10 +97,11 @@ private:
 	//显示所有容器.
 	bool ShowAllContainers(HTREEITEM hTreeItem);
 
+	//添加元素
+	bool AddElementToTree(HTREEITEM hParentItem);
+
 protected:
 
-public:
-	afx_msg void OnAppendElement();
 };
 
 /////////////////////////////////////////////////////////////////////////////
