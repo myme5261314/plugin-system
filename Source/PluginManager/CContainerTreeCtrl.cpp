@@ -402,6 +402,9 @@ void CContainerTreeCtrl::OnCommandDynamicMenu( UINT nID )
 		case ID_APPEND_ELEMENT:		 //添加元素.
 			AddElementToTree(hItem);
 			break;
+		case ID_DELETE_ELEMENT:		 //删除元素.
+			DeleteElementFromTree(hItem);
+			break;
 
 		case ID_DELETE_ALL_ELEMENTS: //删除所有元素.
 			break;
@@ -410,9 +413,6 @@ void CContainerTreeCtrl::OnCommandDynamicMenu( UINT nID )
 			break;
 
 		case ID_UNRELATE_DATA:		 //取消元素关联数据.
-			break;
-		
-		case ID_DELETE_ELEMENT:		 //删除元素.
 			break;
 			
 		case ID_SHOW_ELEMENT:		 //显示元素.
@@ -564,25 +564,19 @@ bool CContainerTreeCtrl::ShowAllContainers(HTREEITEM hTreeItem)
  */
 bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 {
-	// TODO: 在此添加命令处理程序代码
-
 	/*
 	 *	异常判断
 	 */
 	if(!m_pTreeInfoStru->m_pElementManager) return false;
-	
-
 	/*
 	 *	貌似是什么要用到DLL里面的各种资源，什么字符串等的时候要加下面这一句。
 	 */
 	AFX_MANAGE_STATE(AfxGetStaticModuleState());
-
 	/*
 	 *	弹出一个提示框，提示用户输入元素名称。
 	 */
 	CAddElementDlg dlg(m_pTreeInfoStru->m_pElementManager, this);
 	if(dlg.DoModal()!=IDOK) return false;
-
 	/*
 	 *	各种需要用到的指针和变量。
 	 */
@@ -591,13 +585,11 @@ bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 	PLUGIN_GUID          ContainerGuid=((CDataContainer *)GetItemData(hParentItem))->GetFactoryGuid();
 	CDataElement		*pElement=NULL;
 	bool                 bResult=false;
-
 	/*
 	 *	创建元素
 	 */
 	pElement=pElementManager->AppendElement(ContainerGuid, ElementName, false);
 	if(!pElement) return false;
-
 	/*
 	 *	树形控件前台显示部分
 	 */
@@ -617,7 +609,7 @@ bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 	insert.hParent = hParentItem;
 	insert.hInsertAfter = TVI_LAST;
 	::CopyMemory( &(insert.item), &item, sizeof(TVITEM) );
-	// 插入容器.
+	// 在控件显示中插入容器.
 	hInsertItem=InsertItem(&insert);
 	if(!hInsertItem) goto END;
 	Expand(hParentItem, TVE_EXPAND);
@@ -635,6 +627,10 @@ bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 		pParentContainer->AddElement(pElement);
 	}
 
+	/*
+	 *	更改操作结果状态
+	 */
+	bResult=true;
 
 	/*
 	 *	发生错误，取消生成的元素，返回false
@@ -642,5 +638,56 @@ bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 END:
 	if(!bResult) pElementManager->DeleteElement(pElement);
 
+	return bResult;
+}
+
+/*
+ *	删除一个元素
+ */
+bool CContainerTreeCtrl::DeleteElementFromTree(HTREEITEM hParentItem)
+{
+	/*
+	 *	异常判断
+	 */
+	if(!m_pTreeInfoStru->m_pElementManager) return false;
+	/*
+	 *	貌似是什么要用到DLL里面的各种资源，什么字符串等的时候要加下面这一句。
+	 */
+	AFX_MANAGE_STATE(AfxGetStaticModuleState());
+	/*
+	 *	各种需要用到的指针和变量。
+	 */
+	CDataElementManager *pElementManager=m_pTreeInfoStru->m_pElementManager;
+	//String				 ElementName=dlg.m_ElementName;
+	//PLUGIN_GUID          ContainerGuid=((CDataContainer *)GetItemData(hParentItem))->GetFactoryGuid();
+	CDataElement		*pElement=NULL;
+	bool                 bResult=false;
+	/*
+	 *	检查当前元素是否合法。
+	 */
+	DWORD lParam=GetItemData(hParentItem);
+	if (lParam>0)
+	{
+		pElement=(CDataElement*)lParam;
+		//记录树形图形节点管理.
+		m_pTreeInfoStru->m_pTreeElementManager->RemoveTreeItem(pElement);
+		//在控件显示中删除该元素。
+		DeleteItem(hParentItem);
+		//改变操作结果状态
+		bResult=true;
+	}
+	else
+	{
+		goto END;
+	}
+	/*
+	 *	在前台显示中删除这个元素节点。
+	 */
+	pElementManager->DeleteElement(pElement);
+	bResult=true;
+	/*
+	 *	错误处理
+	 */
+END:
 	return bResult;
 }
