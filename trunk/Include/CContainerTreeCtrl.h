@@ -100,6 +100,9 @@ private:
 	//Ìí¼ÓÔªËØ
 	bool AddElementToTree(HTREEITEM hParentItem);
 
+	//É¾³ıÔªËØ
+	bool DeleteElementFromTree(HTREEITEM hParentItem);
+
 protected:
 
 };
