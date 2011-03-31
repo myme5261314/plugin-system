@@ -378,7 +378,12 @@ void CContainerTreeCtrl::OnCommandDynamicMenu( UINT nID )
 		case ID_HIDE_ALL_CONTAINER:	 //隐藏所有容器.
 			break;
 
+		case ID_DELETE_CONTAINER:	 //删除容器
+			DeleteContainerFromTree(hItem);
+			break;
+
 		case ID_DELETE_ALL_CONTAINER://删除所有容器.
+			DeleteAllContainerFromTree(hItem);
 			break;
 
 		case ID_SHOW_CONTAINER:		 //显示容器.
@@ -407,6 +412,7 @@ void CContainerTreeCtrl::OnCommandDynamicMenu( UINT nID )
 			break;
 
 		case ID_DELETE_ALL_ELEMENTS: //删除所有元素.
+			DeleteAllElementFromTree(hItem);
 			break;
 
 		case ID_RELATE_DATA:		 //关联元素数据.
@@ -681,7 +687,7 @@ bool CContainerTreeCtrl::DeleteElementFromTree(HTREEITEM hParentItem)
 		goto END;
 	}
 	/*
-	 *	在前台显示中删除这个元素节点。
+	 *	在后台数据中删除这个元素节点。
 	 */
 	pElementManager->DeleteElement(pElement);
 	bResult=true;
@@ -689,5 +695,170 @@ bool CContainerTreeCtrl::DeleteElementFromTree(HTREEITEM hParentItem)
 	 *	错误处理
 	 */
 END:
+	return bResult;
+}
+
+/*
+ *	删除所有元素。
+ */
+bool CContainerTreeCtrl::DeleteAllElementFromTree(HTREEITEM hParentItem)
+{
+	/*
+	 *	异常判断
+	 */
+	if(!m_pTreeInfoStru->m_pElementManager) return false;
+	/*
+	 *	貌似是什么要用到DLL里面的各种资源，什么字符串等的时候要加下面这一句。
+	 */
+	AFX_MANAGE_STATE(AfxGetStaticModuleState());
+	/*
+	 *	各种需要用到的指针和变量。
+	 */
+	CDataElementManager *pElementManager=m_pTreeInfoStru->m_pElementManager;
+	//String				 ElementName=dlg.m_ElementName;
+	//PLUGIN_GUID          ContainerGuid=((CDataContainer *)GetItemData(hParentItem))->GetFactoryGuid();
+	//HTREEITEM			temp_item=NULL;
+	CDataElement		*pElement=NULL;
+	bool                 bResult=false;
+	/*
+	 *	如果当前容器下有元素则执行
+	 */
+	if (ItemHasChildren(hParentItem))
+	{
+		HTREEITEM hNextItem;
+		HTREEITEM hChildItem = GetChildItem(hParentItem);
+		/*
+		 *	循环删除元素，直至删除完毕。
+		 */
+		while (hChildItem != NULL)
+		{
+			/*
+			 *	删除当前子节点前，先取出数据（之前就是后取数据，所以功能实现得有问题）。
+			 */
+			hNextItem = GetNextItem(hChildItem, TVGN_NEXT);
+			pElement=(CDataElement*)GetItemData(hChildItem);
+			/*
+			 *	若当前内容为元素，则删除，若为容器，则不管。
+			 */
+			if (!pElement->IsContainer())
+			{
+				DeleteElementFromTree(hChildItem);
+			}
+			/*
+			 *	指针指向下一个元素。
+			 */
+			hChildItem = hNextItem;
+			bResult=true;
+		}
+	}
+	/*
+	 *	如果当前容器下没有元素
+	 */
+	else
+	{
+		bResult=false;
+	}
+	return bResult;
+}
+
+/*
+ *	删除一个容器
+ */
+bool CContainerTreeCtrl::DeleteContainerFromTree(HTREEITEM hParentItem)
+{
+	bool                 bResult=false;
+	/*
+	 *	删除下一级的所有元素
+	 */
+	DeleteAllElementFromTree(hParentItem);
+	/*
+	 *	循环递归删除剩余的子容器。
+	 */
+	if (ItemHasChildren(hParentItem))
+	{
+		/*
+		 *	各种需要用到的指针和变量。
+		 */
+		CDataElementManager *pElementManager=m_pTreeInfoStru->m_pElementManager;
+		//String				 ElementName=dlg.m_ElementName;
+		//PLUGIN_GUID          ContainerGuid=((CDataContainer *)GetItemData(hParentItem))->GetFactoryGuid();
+		//HTREEITEM			temp_item=NULL;
+		CDataContainer		*pContainer=NULL;
+		HTREEITEM hNextItem;
+		HTREEITEM hChildItem = GetChildItem(hParentItem);
+
+		while (hChildItem!=NULL)
+		{
+			hNextItem = GetNextItem(hChildItem, TVGN_NEXT);
+			/*
+			 *	递归调用删除当前的子容器
+			 */
+			bResult=DeleteContainerFromTree(hChildItem);
+			/*
+			 *	删除自己。
+			 */
+			bResult=DeleteElementFromTree(hChildItem);
+			/*
+			 *	指针指向下一个子容器。
+			 */
+			hChildItem=hNextItem;
+		}
+	}
+
+	/*
+	 *	所有下一层级的内容删除完之后，再删除自己。
+	 */
+	DeleteElementFromTree(hParentItem);
+
+	return bResult;
+}
+
+/*
+ *	删除所有容器（根节点菜单）。
+ */
+bool CContainerTreeCtrl::DeleteAllContainerFromTree(HTREEITEM hParentItem)
+{
+	/*
+	 *	各种需要用到的指针和变量。
+	 */
+	//CDataElementManager *pElementManager=m_pTreeInfoStru->m_pElementManager;
+	//String				 ElementName=dlg.m_ElementName;
+	//PLUGIN_GUID          ContainerGuid=((CDataContainer *)GetItemData(hParentItem))->GetFactoryGuid();
+	//HTREEITEM			temp_item=NULL;
+	//CDataContainer		*pContainer=NULL;
+	HTREEITEM hNextItem=NULL;
+	HTREEITEM hChildItem = NULL;
+	CDataElement *pElement=NULL;
+	bool bResult=false;
+	/*
+	 *	若有下一级内容
+	 */
+	if (ItemHasChildren(hParentItem))
+	{
+		hChildItem=GetChildItem(hParentItem);
+		while (hChildItem!=NULL)
+		{
+			hNextItem=GetNextItem(hChildItem,TVGN_NEXT);
+			DWORD lParam=GetItemData(hChildItem);
+			if (lParam>0)
+			{
+				pElement=(CDataElement*)lParam;
+				if (pElement->IsContainer())
+				{
+					DeleteContainerFromTree(hChildItem);
+				}
+				else
+				{
+					DeleteElementFromTree(hChildItem);
+				}
+			}
+			hChildItem=hNextItem;
+			bResult=true;
+		}
+	}
+	else
+	{
+		bResult=true;
+	}
 	return bResult;
 }
