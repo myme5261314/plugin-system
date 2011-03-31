@@ -97,11 +97,20 @@ private:
 	//显示所有容器.
 	bool ShowAllContainers(HTREEITEM hTreeItem);
 
-	//添加元素
+	//添加元素。
 	bool AddElementToTree(HTREEITEM hParentItem);
 
-	//删除元素
+	//删除元素。
 	bool DeleteElementFromTree(HTREEITEM hParentItem);
+
+	//删除所有元素。
+	bool DeleteAllElementFromTree(HTREEITEM hParentItem);
+
+	//删除容器。
+	bool DeleteContainerFromTree(HTREEITEM hParentItem);
+
+	//删除所有容器。
+	bool DeleteAllContainerFromTree(HTREEITEM hParentItem);
 
 protected:
 
