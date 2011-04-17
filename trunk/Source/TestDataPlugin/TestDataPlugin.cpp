@@ -3,7 +3,8 @@
 
 #include "stdafx.h"
 #include "TestDataPlugin.h"
-#include "MyElementFactory.h"
+#include "MyDataPlugin.h"
+//#include "MyElementFactory.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -62,16 +63,21 @@ CTestDataPluginApp::CTestDataPluginApp()
 
 CTestDataPluginApp theApp;
 
-CMyElementFactory *  g_pMyElementFactory = NULL;
+//CMyElementFactory *  g_pMyElementFactory = NULL;
+CMyDataPlugin *p_myDataPlugin=NULL;
+
 
 //运行插件DLL.
 long WINAPI dllStartPlugin(void)
 {
 	//AfxMessageBox("Start Plugin!");
 
-	g_pMyElementFactory = new CMyElementFactory();
-	if(!g_pMyElementFactory) return 0;
-	return g_pMyElementFactory->RegisterObject();
+// 	g_pMyElementFactory = new CMyElementFactory();
+// 	if(!g_pMyElementFactory) return 0;
+// 	return g_pMyElementFactory->RegisterObject();
+	p_myDataPlugin=new CMyDataPlugin();
+	if (!p_myDataPlugin) return 0;
+	return p_myDataPlugin->RegisterObject();
 }
 
 //停止插件DLL.
@@ -79,8 +85,10 @@ long WINAPI dllStopPlugin(void)
 {
 	//AfxMessageBox("Stop Plugin!");
 
-	if(g_pMyElementFactory) delete g_pMyElementFactory;
-	g_pMyElementFactory=NULL;
+// 	if(g_pMyElementFactory) delete g_pMyElementFactory;
+// 	g_pMyElementFactory=NULL;
+	if(p_myDataPlugin) delete p_myDataPlugin;
+	p_myDataPlugin=NULL;
 
     return 1;
 }

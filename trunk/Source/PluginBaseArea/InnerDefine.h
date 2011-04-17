@@ -1,9 +1,11 @@
 #ifndef _INNNER_DEFINE_H_
 #define _INNNER_DEFINE_H_
 
+
 //////////////////////////内部定义文件///////////////////////////////////////
 
 class CPluginDllManager;
+class CDataPluginManager;
 class CFunctionPluginManager;
 class CMessageListenerManager;
 class CDataElementManager;
@@ -12,6 +14,7 @@ struct WorkspaceInfoStrcT
 {
 	CPluginDllManager		*m_pDllManager;
 	CFunctionPluginManager	*m_pFunctionManager;
+	CDataPluginManager		*m_pDataManager;
 	CMessageListenerManager	*m_pMsgListenerManager;
 	CDataElementManager     *m_pElementManager;
 

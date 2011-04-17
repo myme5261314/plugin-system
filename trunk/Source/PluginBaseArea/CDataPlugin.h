@@ -8,7 +8,7 @@
 
 #include "CPluginBase.h"
 
-class CDataPlugin : public CPluginBase
+class PLUGIN_EXPORT_CLASS CDataPlugin : public CPluginBase
 {
 public:
 

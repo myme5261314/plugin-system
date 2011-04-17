@@ -7,6 +7,7 @@
 #include "CMessageListenerManager.h"
 #include "CDataElementManager.h"
 #include "InnerDefine.h"
+#include "CDataPluginManager.h"
 
 CPluginWorkspace *CPluginWorkspace::m_SingletonPtr=NULL;
 
@@ -41,6 +42,10 @@ bool CPluginWorkspace::InitialManagerSets(void)
 
 	m_pWorkspaceInfoStru->m_pFunctionManager=new CFunctionPluginManager();
 	if(!m_pWorkspaceInfoStru->m_pFunctionManager) goto END;
+
+	m_pWorkspaceInfoStru->m_pDataManager=new CDataPluginManager();
+
+
 
 	m_pWorkspaceInfoStru->m_pElementManager=new CDataElementManager();
 	if(!m_pWorkspaceInfoStru->m_pElementManager) goto END;

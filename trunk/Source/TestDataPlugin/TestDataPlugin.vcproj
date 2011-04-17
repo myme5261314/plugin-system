@@ -4,6 +4,7 @@
 	Version="8.00"
 	Name="TestDataPlugin"
 	ProjectGUID="{375030D1-C1F6-4A30-A3F3-A1BEFBABCE3E}"
+	RootNamespace="TestDataPlugin"
 	Keyword="MFCProj"
 	>
 	<Platforms>
@@ -315,6 +316,14 @@
 				</File>
 				<File
 					RelativePath="MyContainer.h"
+					>
+				</File>
+				<File
+					RelativePath=".\MyDataPlugin.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\MyDataPlugin.h"
 					>
 				</File>
 				<File
