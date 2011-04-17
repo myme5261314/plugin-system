@@ -4,6 +4,7 @@
 	Version="8.00"
 	Name="PluginBaseArea"
 	ProjectGUID="{F12D565A-4D04-4248-9095-B7F3CFC2AEB4}"
+	RootNamespace="PluginBaseArea"
 	Keyword="MFCProj"
 	>
 	<Platforms>
@@ -207,7 +208,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="Copy .\CSingletonTml.h  ..\..\Include\.&#x0D;&#x0A;Copy .\PluginBase_Define.h ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginWorkspace.h  ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginBase.h ..\..\Include\.&#x0D;&#x0A;Copy .\CFunctionPlugin.h ..\..\Include\.&#x0D;&#x0A;Copy .\CMessageListener.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataObject.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElement.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataContainer.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementFactory.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementManager.h ..\..\Include\.&#x0D;&#x0A;Copy .\CContainerRoot.h ..\..\Include\.&#x0D;&#x0A;"
+				CommandLine="Copy .\CSingletonTml.h  ..\..\Include\.&#x0D;&#x0A;Copy .\PluginBase_Define.h ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginWorkspace.h  ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginBase.h ..\..\Include\.&#x0D;&#x0A;&#x0D;&#x0A;Copy .\CDataPlugin.h ..\..\Include\.&#x0D;&#x0A;Copy .\CFunctionPlugin.h ..\..\Include\.&#x0D;&#x0A;&#x0D;&#x0A;Copy .\CMessageListener.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataObject.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElement.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataContainer.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementFactory.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementManager.h ..\..\Include\.&#x0D;&#x0A;Copy .\CContainerRoot.h ..\..\Include\.&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>
@@ -620,6 +621,18 @@
 					</File>
 					<File
 						RelativePath="CContainerRoot.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="数据插件管理器"
+					>
+					<File
+						RelativePath=".\CDataPluginManager.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\CDataPluginManager.h"
 						>
 					</File>
 				</Filter>
