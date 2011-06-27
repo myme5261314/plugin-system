@@ -6,16 +6,19 @@
 
 template<> CDataElementManager* CSingletonTml<CDataElementManager>::m_SingletonPtr = 0;
 
+//##ModelId=4C5E77A602A9
 CDataElementManager* CDataElementManager::GetSingletonPtr(void)
 {
 	return m_SingletonPtr;
 }
 
+//##ModelId=4C5E77A601FF
 CDataElementManager::CDataElementManager()
 {
 
 }
 
+//##ModelId=4C5E77A6024C
 CDataElementManager::~CDataElementManager()
 {
 	//删除所有的元素.
@@ -28,6 +31,7 @@ CDataElementManager::~CDataElementManager()
 /////////////////////////////元素操作/////////////////////////////////////////////////////////////////////////////////////////
 
 //添加一个元素.
+//##ModelId=4C653E22017E
 CDataElement* CDataElementManager::AppendElement(const PLUGIN_GUID& FactoryGuid, const String& InstanceName, bool IsContainer)
 {
 	if(InstanceName.length()<1 || FactoryGuid.length()<1) return NULL;
@@ -55,12 +59,14 @@ CDataElement* CDataElementManager::AppendElement(const PLUGIN_GUID& FactoryGuid,
 }
 
 //删除一个元素, 根据元素对象指针.
+//##ModelId=4C5E77A60384
 void CDataElementManager::DeleteElement(CDataElement* pDataElement)
 {
-	DeleteElement(pDataElement->GetName());
+	DeleteElement(pDataElement->CDataObject::GetName());
 }
 
 //删除一个元素, 根据元素对象Guid.
+//##ModelId=4C5FF28801C1
 void CDataElementManager::DeleteElement(const String& InstanceName)
 {
 	if(InstanceName.length()<1) return;
@@ -80,7 +86,7 @@ void CDataElementManager::DeleteElement(const String& InstanceName)
 
 		//通知元素所属容器ReomveChild?
 		CDataContainer *pContainer=pDataElement->_GetParent();
-		if(pContainer!=NULL) pContainer->ReomveChild(pDataElement->GetName());
+		if(pContainer!=NULL) pContainer->ReomveChild(pDataElement->CDataObject::GetName());
 
 		fit->second->DestroyInstance(pDataElement);
 		m_ElementList.erase(i);
@@ -88,6 +94,7 @@ void CDataElementManager::DeleteElement(const String& InstanceName)
 }
 
 //根据元素对象Guid, 获取一个元素.
+//##ModelId=4C5FF288022E
 CDataElement* CDataElementManager::GetElement(const String& InstanceName)
 {
 	if(InstanceName.length()<1) return NULL;
@@ -100,12 +107,14 @@ CDataElement* CDataElementManager::GetElement(const String& InstanceName)
 }
 
 //获取元素个数.
+//##ModelId=4C5E77A700E3
 long CDataElementManager::GetElementNum(void)
 {
 	return m_ElementList.size();
 }
 
 //删除所有的元素.
+//##ModelId=4C5EA33F024F
 void CDataElementManager::DeleteAllElements()
 {
 	for (DataElementList::iterator i = m_ElementList.begin(); i != m_ElementList.end(); ++i)
@@ -122,7 +131,7 @@ void CDataElementManager::DeleteAllElements()
 
 		//通知元素所属容器ReomveChild.
 		CDataContainer *pContainer=pDataElement->_GetParent();
-		if(pContainer!=NULL) pContainer->ReomveChild(pDataElement->GetName());
+		if(pContainer!=NULL) pContainer->ReomveChild(pDataElement->CDataObject::GetName());
 				
 		fit->second->DestroyInstance(pDataElement);
 	}
@@ -137,6 +146,7 @@ void CDataElementManager::DeleteAllElements()
 //在运行过程中：元素对象运行有多个，但工厂对象只有一个!
 
 //添加一个元素工厂.
+//##ModelId=4C5E7B7203C1
 bool CDataElementManager::AddElementFactory(CDataElementFactory *pElementFactory)
 {
 	if(!pElementFactory) return false;
@@ -154,6 +164,7 @@ bool CDataElementManager::AddElementFactory(CDataElementFactory *pElementFactory
 }
 
 //根据元素工厂Guid, 获取一个工厂.
+//##ModelId=4C5EA33F0359
 CDataElementFactory* CDataElementManager::GetElementFactory(const PLUGIN_GUID& FactoryGuid)
 {
 	if(FactoryGuid.length()<1) return NULL;
@@ -166,6 +177,7 @@ CDataElementFactory* CDataElementManager::GetElementFactory(const PLUGIN_GUID& F
 }
 
 //删除一个元素工厂的所有元素.
+//##ModelId=4C5EA61000EB
 bool CDataElementManager::DeleteElementsOfAFactory(const PLUGIN_GUID& FactoryGuid)
 {
 	//先找到该工厂元素.
@@ -181,7 +193,7 @@ bool CDataElementManager::DeleteElementsOfAFactory(const PLUGIN_GUID& FactoryGui
 		{
 			//通知元素所属容器ReomveChild.
 			CDataContainer *pContainer=pDataElement->_GetParent();
-			if(pContainer!=NULL) pContainer->ReomveChild(pDataElement->GetName());
+			if(pContainer!=NULL) pContainer->ReomveChild(pDataElement->CDataObject::GetName());
 
 			pDataElementFactory->DestroyInstance(pDataElement);
 			DataElementList::iterator deli = i++;

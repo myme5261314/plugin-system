@@ -50,6 +50,7 @@ END_MESSAGE_MAP()
 /////////////////////////////////////////////////////////////////////////////
 // CPluginBaseAreaApp construction
 
+//##ModelId=4C5A6B8A011C
 CPluginBaseAreaApp::CPluginBaseAreaApp()
 {
 	// TODO: add construction code here,

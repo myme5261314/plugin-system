@@ -14,6 +14,7 @@ static char THIS_FILE[]=__FILE__;
 
 //自定义消息.
 #define WM_TEST_PLUGIN	(WM_USER+0x1000)  
+#define WM_RIGHT_MENU (WM_USER+0x1001)
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -58,6 +59,14 @@ long CMyFuncPlugin::OnMessageProc(HPLGC hPC, UINT msg, WPARAM wParam, LPARAM lPa
 		if(pFrameWnd!=NULL)
 		{
 			pFrameWnd->MessageBox("Process WM_TEST_PLUGIN!");
+		}
+	}
+	else if (msg==WM_RIGHT_MENU)
+	{
+		CFrameWnd *pFrameWnd=(CFrameWnd *)lParam;
+		if(pFrameWnd!=NULL)
+		{
+			pFrameWnd->MessageBox("Process!");
 		}
 	}
 

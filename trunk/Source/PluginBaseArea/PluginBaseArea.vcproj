@@ -208,7 +208,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="Copy .\CSingletonTml.h  ..\..\Include\.&#x0D;&#x0A;Copy .\PluginBase_Define.h ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginWorkspace.h  ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginBase.h ..\..\Include\.&#x0D;&#x0A;&#x0D;&#x0A;Copy .\CDataPlugin.h ..\..\Include\.&#x0D;&#x0A;Copy .\CFunctionPlugin.h ..\..\Include\.&#x0D;&#x0A;&#x0D;&#x0A;Copy .\CMessageListener.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataObject.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElement.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataContainer.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementFactory.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementManager.h ..\..\Include\.&#x0D;&#x0A;Copy .\CContainerRoot.h ..\..\Include\.&#x0D;&#x0A;"
+				CommandLine="Copy .\CSingletonTml.h  ..\..\Include\.&#x0D;&#x0A;Copy .\PluginBase_Define.h ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginWorkspace.h  ..\..\Include\.&#x0D;&#x0A;Copy .\CPluginBase.h ..\..\Include\.&#x0D;&#x0A;&#x0D;&#x0A;Copy .\CDataPlugin.h ..\..\Include\.&#x0D;&#x0A;Copy .\CFunctionPlugin.h ..\..\Include\.&#x0D;&#x0A;&#x0D;&#x0A;Copy .\CMessageListener.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataObject.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElement.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataContainer.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementFactory.h ..\..\Include\.&#x0D;&#x0A;Copy .\CDataElementManager.h ..\..\Include\.&#x0D;&#x0A;Copy .\CContainerRoot.h ..\..\Include\.&#x0D;&#x0A;Copy .\MenuItemManager.h ..\..\Include\.&#x0D;&#x0A;Copy .\InnerDefine.h ..\..\Include\."
 			/>
 		</Configuration>
 	</Configurations>
@@ -742,6 +742,18 @@
 				</File>
 				<File
 					RelativePath="InnerDefine.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="菜单项管理器"
+				>
+				<File
+					RelativePath=".\MenuItemManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\MenuItemManager.h"
 					>
 				</File>
 			</Filter>

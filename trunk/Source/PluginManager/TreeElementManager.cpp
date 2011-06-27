@@ -16,23 +16,27 @@ static char THIS_FILE[]=__FILE__;
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
+//##ModelId=4C64C1B70361
 CTreeElementManager::CTreeElementManager()
 {
 
 }
 
+//##ModelId=4C64C1B70362
 CTreeElementManager::~CTreeElementManager()
 {
 	m_ElementToTreeItemMap.clear();
 }
 
 // 添加条目.
+//##ModelId=4C64C447014A
 void CTreeElementManager::AddTreeItem(CDataElement* pElement, HTREEITEM hItem)
 {
 	m_ElementToTreeItemMap[pElement]=hItem;
 }
 
 // 删除条目.
+//##ModelId=4C64C4470193
 void CTreeElementManager::RemoveTreeItem(CDataElement* pElement)
 {
 	ElementToTreeItemMap::iterator i = m_ElementToTreeItemMap.find(pElement);
@@ -43,6 +47,7 @@ void CTreeElementManager::RemoveTreeItem(CDataElement* pElement)
 }
 
 // 更新条目.
+//##ModelId=4C64C44701B2
 void CTreeElementManager::UpdateTreeItem(CDataElement* pElement, HTREEITEM hItem)
 {
 	ElementToTreeItemMap::iterator i = m_ElementToTreeItemMap.find(pElement);
@@ -54,6 +59,7 @@ void CTreeElementManager::UpdateTreeItem(CDataElement* pElement, HTREEITEM hItem
 
 
 // 查找条目.
+//##ModelId=4C64C4470200
 HTREEITEM CTreeElementManager::FindTreeItem(CDataElement* pElement)
 {
 	ElementToTreeItemMap::iterator i = m_ElementToTreeItemMap.find(pElement);

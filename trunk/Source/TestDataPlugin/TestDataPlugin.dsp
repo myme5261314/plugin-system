@@ -115,6 +115,14 @@ SOURCE=.\MyContainer.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\MyDataPlugin.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MyDataPlugin.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\MyElement.cpp
 # End Source File
 # Begin Source File

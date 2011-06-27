@@ -245,6 +245,18 @@ SOURCE=.\CContainerRoot.cpp
 SOURCE=.\CContainerRoot.h
 # End Source File
 # End Group
+# Begin Group "数据插件管理器"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\CDataPluginManager.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\CDataPluginManager.h
+# End Source File
+# End Group
 # End Group
 # Begin Group "插件工作区"
 
@@ -288,6 +300,18 @@ SOURCE=.\InnerDefine.cpp
 # Begin Source File
 
 SOURCE=.\InnerDefine.h
+# End Source File
+# End Group
+# Begin Group "菜单项管理器"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\MenuItemManager.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MenuItemManager.h
 # End Source File
 # End Group
 # Begin Source File

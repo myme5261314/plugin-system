@@ -92,3 +92,5 @@ long WINAPI dllStopPlugin(void)
 
     return 1;
 }
+
+

@@ -6,6 +6,121 @@
 --------------------Configuration: PluginBaseArea - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PluginBaseArea.res" /d "NDEBUG" /d "_AFXDLL" "F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\PluginBaseArea.rc"" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP88E5.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "__PLUGIN_BASE_AREA_DLL__" /Fp"Release/PluginBaseArea.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginDll.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginDllManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CFunctionPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginBase.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CFunctionPluginManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataObject.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataElement.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataContainer.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataElementFactory.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataElementManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CContainerRoot.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataPluginManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginWorkspace.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CMessageListener.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CMessageListenerManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\InnerDefine.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\MenuItemManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\PluginBaseArea.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP88E5.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP88E6.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "__PLUGIN_BASE_AREA_DLL__" /Fp"Release/PluginBaseArea.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP88E6.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP88E7.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\Bin\PluginBaseArea.pdb" /debug /machine:I386 /def:".\PluginBaseArea.def" /out:"..\..\Bin\PluginBaseArea.dll" /implib:"..\..\Bin\PluginBaseArea.lib" 
+".\Release\CPluginDll.obj"
+".\Release\CPluginDllManager.obj"
+".\Release\CDataPlugin.obj"
+".\Release\CFunctionPlugin.obj"
+".\Release\CPluginBase.obj"
+".\Release\CFunctionPluginManager.obj"
+".\Release\CDataObject.obj"
+".\Release\CDataElement.obj"
+".\Release\CDataContainer.obj"
+".\Release\CDataElementFactory.obj"
+".\Release\CDataElementManager.obj"
+".\Release\CContainerRoot.obj"
+".\Release\CDataPluginManager.obj"
+".\Release\CPluginWorkspace.obj"
+".\Release\CMessageListener.obj"
+".\Release\CMessageListenerManager.obj"
+".\Release\InnerDefine.obj"
+".\Release\MenuItemManager.obj"
+".\Release\PluginBaseArea.obj"
+".\Release\StdAfx.obj"
+".\Release\PluginBaseArea.res"
+]
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSP88E7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CPluginDll.cpp
+CPluginDllManager.cpp
+CDataPlugin.cpp
+CFunctionPlugin.cpp
+CPluginBase.cpp
+CFunctionPluginManager.cpp
+CDataObject.cpp
+CDataElement.cpp
+CDataContainer.cpp
+CDataElementFactory.cpp
+CDataElementManager.cpp
+CContainerRoot.cpp
+CDataPluginManager.cpp
+CPluginWorkspace.cpp
+CMessageListener.cpp
+CMessageListenerManager.cpp
+InnerDefine.cpp
+MenuItemManager.cpp
+PluginBaseArea.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library ..\..\Bin\PluginBaseArea.lib and object ..\..\Bin\PluginBaseArea.exp
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP9B9D.bat" with contents
+[
+@echo off
+Copy .\CSingletonTml.h  ..\..\Include\.
+Copy .\PluginBase_Define.h ..\..\Include\.
+Copy .\CPluginWorkspace.h  ..\..\Include\.
+Copy .\CPluginBase.h ..\..\Include\.
+Copy .\CFunctionPlugin.h ..\..\Include\.
+Copy .\CMessageListener.h ..\..\Include\.
+Copy .\CDataObject.h ..\..\Include\.
+Copy .\CDataElement.h ..\..\Include\.
+Copy .\CDataContainer.h ..\..\Include\.
+Copy .\CDataElementFactory.h ..\..\Include\.
+Copy .\CDataElementManager.h ..\..\Include\.
+Copy .\CContainerRoot.h ..\..\Include\.
+]
+Creating command line "C:\Users\liupeng\AppData\Local\Temp\RSP9B9D.bat"
+
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
 
 
 

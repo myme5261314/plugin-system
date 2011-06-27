@@ -13,17 +13,21 @@
 #include "AddContainerDlg.h"
 #include "AddElementDlg.h"
 
-#define DYNAMIC_MENU_ID_BASE 48000
-#define DYNAMIC_MENU_MAX_NUM 1000
+#include "CPluginWorkspace.h"
+
+
 
 /////////////////////////////////////////////////////////////////////////////
 // CContainerTreeCtrl
 
+//##ModelId=4C60C53602C9
 CContainerTreeCtrl::CContainerTreeCtrl()
 {
 	m_pTreeInfoStru = new ContainerTreeInfoStrcT();
+	m_Root_menu=new MenuItemManager();
 }
 
+//##ModelId=4C60C53602F6
 CContainerTreeCtrl::~CContainerTreeCtrl()
 {
 	ReleaseEnv();
@@ -48,7 +52,8 @@ BEGIN_MESSAGE_MAP(CContainerTreeCtrl, CTreeCtrl)
 	//}}AFX_MSG_MAP
 
 	//目前暂时使用静态菜单.
-	ON_COMMAND_RANGE(ID_CREATE_CONTAINER, ID_CREATE_CONTAINER+DYNAMIC_MENU_MAX_NUM, OnCommandDynamicMenu)
+	//ON_COMMAND_RANGE(ID_CREATE_CONTAINER, ID_CREATE_CONTAINER+DYNAMIC_MENU_MAX_NUM, OnCommandDynamicMenu)
+	ON_COMMAND_RANGE(DYNAMIC_MENU_ID_BASE,DYNAMIC_MENU_ID_BASE+DYNAMIC_MENU_MAX_NUM+100, OnCommandDynamicMenu)
 	ON_UPDATE_COMMAND_UI_RANGE(ID_CREATE_CONTAINER, ID_CREATE_CONTAINER+DYNAMIC_MENU_MAX_NUM, OnUpdateDynamicMenu)
 
 
@@ -64,6 +69,7 @@ END_MESSAGE_MAP()
 // CContainerTreeCtrl message handlers
 
 //设置图像列表.
+//##ModelId=4C610879024B
 void CContainerTreeCtrl::SetItemImageList(CImageList *pImageList)
 {
 	m_pTreeInfoStru->m_pImageList = pImageList;
@@ -71,12 +77,14 @@ void CContainerTreeCtrl::SetItemImageList(CImageList *pImageList)
 }
 
 //设置树中元素在图像列表中的下标.
+//##ModelId=4C61002C0289
 void CContainerTreeCtrl::SetItemImageIndex(_TreeItemImageType ImageType, int Index)
 {
 	m_pTreeInfoStru->m_ItemImageNo[ImageType]=Index;
 }
 
 //初始化.
+//##ModelId=4C61002C0306
 bool CContainerTreeCtrl::Initial(void)
 {
 	if(!m_pTreeInfoStru->m_pImageList) return false;
@@ -117,6 +125,17 @@ bool CContainerTreeCtrl::Initial(void)
 	m_pTreeInfoStru->m_hRoot=InsertItem(&insert);
 	bResult=(m_pTreeInfoStru->m_hRoot!=NULL);
 
+
+	//根节点菜单生成
+	MenuItemGroup *ptr_root_menu=m_Root_menu->getRootItem();
+	ptr_root_menu->appendItem(MIT_ITEM,"添加容器");
+	ptr_root_menu->appendItem(MIT_SEPARATOR,"");
+	ptr_root_menu->appendItem(MIT_ITEM,"显示所有容器");
+	ptr_root_menu->appendItem(MIT_ITEM,"隐藏所有容器");
+	ptr_root_menu->appendItem(MIT_SEPARATOR,"");
+	ptr_root_menu->appendItem(MIT_ITEM,"删除所有容器");
+	m_Root_menu->genMenu();
+
 END:
 
 	if(!bResult) ReleaseEnv();
@@ -124,6 +143,7 @@ END:
 }
 
 //释放环境.
+//##ModelId=4C6511CA0369
 void CContainerTreeCtrl::ReleaseEnv(void)
 {
 	if(!m_pTreeInfoStru) return;
@@ -140,6 +160,7 @@ void CContainerTreeCtrl::ReleaseEnv(void)
 ////////////////////////////////树型鼠标操作/////////////////////////////////////////////////////////////
 
 //点击某个条目.
+//##ModelId=4C61087902A9
 void CContainerTreeCtrl::OnClick(NMHDR* pNMHDR, LRESULT* pResult) 
 {
 	// TODO: Add your control notification handler code here
@@ -148,6 +169,7 @@ void CContainerTreeCtrl::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 }
 
 //双击某个条目.
+//##ModelId=4C6108790345
 void CContainerTreeCtrl::OnDblclk(NMHDR* pNMHDR, LRESULT* pResult) 
 {
 	// TODO: Add your control notification handler code here
@@ -156,6 +178,7 @@ void CContainerTreeCtrl::OnDblclk(NMHDR* pNMHDR, LRESULT* pResult)
 }
 
 //右键单击某个条目.
+//##ModelId=4C61087A0009
 void CContainerTreeCtrl::OnRclick(NMHDR* pNMHDR, LRESULT* pResult) 
 {
 	// TODO: Add your control notification handler code here
@@ -180,30 +203,48 @@ void CContainerTreeCtrl::OnRclick(NMHDR* pNMHDR, LRESULT* pResult)
 	{
 		if(hItem == m_pTreeInfoStru->m_hRoot) //根结点.
 		{
-			if(UserMenu.LoadMenu(IDR_ROOT_MENU))
+// 			if(UserMenu.LoadMenu(IDR_ROOT_MENU))
+// 			{
+// 				pPopupMenu = UserMenu.GetSubMenu(0);
+// 				if(pPopupMenu!=NULL) pPopupMenu->TrackPopupMenu(TPM_LEFTALIGN|TPM_RIGHTBUTTON, pt.x, pt.y, this);
+// 			}
+			HMENU temp=m_Root_menu->getHMenu();
+			pPopupMenu=CMenu::FromHandle(temp);
+			if (pPopupMenu)
 			{
-				pPopupMenu = UserMenu.GetSubMenu(0);
-				if(pPopupMenu!=NULL) pPopupMenu->TrackPopupMenu(TPM_LEFTALIGN|TPM_RIGHTBUTTON, pt.x, pt.y, this);
+				pPopupMenu->TrackPopupMenu(TPM_LEFTALIGN|TPM_RIGHTBUTTON, pt.x, pt.y, this);
 			}
 		}
 		else //判断当前结点是容器，还是元素.
 		{
+			/*
+			 *	保存弹出右键菜单所需要的句柄和坐标。
+			 */
+			HPLGC p_pos=new PluginContextStrcT(this->m_hWnd,&pt);
+			/*
+			 *	保存发送消息时要传递的容器或元素的指针。
+			 */
+			CDataElement *p=(CDataElement*)GetItemData(hItem);
 			if(IsTreeItemContainer(hItem)) //容器.
 			{
-				if(UserMenu.LoadMenu(IDR_CONTAINER_MENU))
-				{
-					pPopupMenu = UserMenu.GetSubMenu(0);
-					if(pPopupMenu!=NULL) pPopupMenu->TrackPopupMenu(TPM_LEFTALIGN|TPM_RIGHTBUTTON, pt.x, pt.y, this);
-				}			
+				/*
+				 *	向具体的数据插件发送容器右键菜单。
+				 */
+				p->SendMessage((CMessageListener*)p->m_pFactory->m_dataplugin,p_pos,WM_CONTAINER_RIGHT_MENU,WPARAM(p),NULL);
 			}
 			else //元素.
 			{
-				if(UserMenu.LoadMenu(IDR_ELEMENT_MENU))
-				{
-					pPopupMenu = UserMenu.GetSubMenu(0);
-					if(pPopupMenu!=NULL) pPopupMenu->TrackPopupMenu(TPM_LEFTALIGN|TPM_RIGHTBUTTON, pt.x, pt.y, this);
-				}
+				/*
+				 *	向具体的数据插件发送元素右键消息。
+				 */
+				p->SendMessage((CMessageListener*)p->m_pFactory->m_dataplugin,p_pos,WM_ELEMENT_RIGHT_MENU,WPARAM(p),NULL);
+				
 			}
+			/*
+			 *	释放创建的临时内存。
+			 */
+			delete p_pos;
+			p_pos=NULL;
 		}
 	}
 
@@ -211,6 +252,7 @@ void CContainerTreeCtrl::OnRclick(NMHDR* pNMHDR, LRESULT* pResult)
 }
 
 //编辑条目文字.
+//##ModelId=4C61087A00B4
 void CContainerTreeCtrl::OnEndLabelEdit(NMHDR* pNMHDR, LRESULT* pResult) 
 {
 	TV_DISPINFO* pTVDispInfo = (TV_DISPINFO*)pNMHDR;
@@ -220,6 +262,7 @@ void CContainerTreeCtrl::OnEndLabelEdit(NMHDR* pNMHDR, LRESULT* pResult)
 }
 
 //开始拖动.
+//##ModelId=4C61087A016F
 void CContainerTreeCtrl::OnBeginDrag(NMHDR* pNMHDR, LRESULT* pResult) 
 {
 	NM_TREEVIEW* pNMTreeView = (NM_TREEVIEW*)pNMHDR;
@@ -228,6 +271,7 @@ void CContainerTreeCtrl::OnBeginDrag(NMHDR* pNMHDR, LRESULT* pResult)
 	*pResult = 0;
 }
 
+//##ModelId=4C61087A021B
 void CContainerTreeCtrl::OnLButtonDown(UINT nFlags, CPoint point) 
 {
 	// TODO: Add your message handler code here and/or call default
@@ -235,6 +279,7 @@ void CContainerTreeCtrl::OnLButtonDown(UINT nFlags, CPoint point)
 	CTreeCtrl::OnLButtonDown(nFlags, point);
 }
 
+//##ModelId=4C61087A02E6
 void CContainerTreeCtrl::OnLButtonUp(UINT nFlags, CPoint point) 
 {
 	// TODO: Add your message handler code here and/or call default
@@ -242,6 +287,7 @@ void CContainerTreeCtrl::OnLButtonUp(UINT nFlags, CPoint point)
 	CTreeCtrl::OnLButtonUp(nFlags, point);
 }
 
+//##ModelId=4C61087A03A1
 void CContainerTreeCtrl::OnMouseMove(UINT nFlags, CPoint point) 
 {
 	// TODO: Add your message handler code here and/or call default
@@ -249,6 +295,7 @@ void CContainerTreeCtrl::OnMouseMove(UINT nFlags, CPoint point)
 	CTreeCtrl::OnMouseMove(nFlags, point);
 }
 
+//##ModelId=4C61087B0084
 void CContainerTreeCtrl::OnRButtonUp(UINT nFlags, CPoint point) 
 {
 	// TODO: Add your message handler code here and/or call default
@@ -259,6 +306,7 @@ void CContainerTreeCtrl::OnRButtonUp(UINT nFlags, CPoint point)
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 //消息转发.
+//##ModelId=4C64BCCC0364
 BOOL CContainerTreeCtrl::PreTranslateMessage(MSG* pMsg) 
 {
 	// TODO: Add your specialized code here and/or call the base class
@@ -268,6 +316,7 @@ BOOL CContainerTreeCtrl::PreTranslateMessage(MSG* pMsg)
 }
 
 //provide OnUpdateCmdUI functionality in the tree control
+//##ModelId=4C64BCCC03A2
 void CContainerTreeCtrl::OnInitMenuPopup(CMenu* pMenu, UINT nIndex, BOOL bSysMenu) 
 {
 	//CTreeCtrl::OnInitMenuPopup(pPopupMenu, nIndex, bSysMenu);
@@ -356,6 +405,7 @@ void CContainerTreeCtrl::OnInitMenuPopup(CMenu* pMenu, UINT nIndex, BOOL bSysMen
 }
 
 // 实现菜单响应操作.
+//##ModelId=4C64BCCD0046
 void CContainerTreeCtrl::OnCommandDynamicMenu( UINT nID )
 {
 	HTREEITEM hItem=NULL;
@@ -366,82 +416,41 @@ void CContainerTreeCtrl::OnCommandDynamicMenu( UINT nID )
 	switch(nID)
 	{
 		/*
-		 *	容器相关菜单操作
+		 *	根菜单操作
 		 */
-		case ID_CREATE_CONTAINER:	 //创建容器.
+		case MID_CREATE_CONTAINER:	 //创建容器.
 			AddContainerToTree(hItem);
 			break;
 
-		case ID_SHOW_ALL_CONTAINER:  //显示所有容器.
+		case MID_SHOW_ALL_CONTAINER:  //显示所有容器.
 			break;
 		
-		case ID_HIDE_ALL_CONTAINER:	 //隐藏所有容器.
+		case MID_HIDE_ALL_CONTAINER:	 //隐藏所有容器.
 			break;
 
-		case ID_DELETE_CONTAINER:	 //删除容器
+		case MID_DELETE_CONTAINER:	 //删除容器
 			DeleteContainerFromTree(hItem);
 			break;
 
-		case ID_DELETE_ALL_CONTAINER://删除所有容器.
+		case MID_DELETE_ALL_CONTAINER://删除所有容器.
 			DeleteAllContainerFromTree(hItem);
 			break;
-
-		case ID_SHOW_CONTAINER:		 //显示容器.
-			break;
-
-		case ID_HIDE_CONTAINER:		 //隐藏容器.
-			break;
-
-		case ID_SELECT_CONTAINER:	 //选择容器.
-			break;
-
-		case ID_UNSELECT_CONTAINER:	 //取消选择容器.
-			break;
-			
-		case ID_EDIT_CONTAINER_ATTR: //容器属性选项.
-			break;
-		
-		/*
-		 *	元素相关操作菜单
-		 */
-		case ID_APPEND_ELEMENT:		 //添加元素.
+		case MID_CREATE_ELEMENT:
 			AddElementToTree(hItem);
 			break;
-		case ID_DELETE_ELEMENT:		 //删除元素.
-			DeleteElementFromTree(hItem);
-			break;
-
-		case ID_DELETE_ALL_ELEMENTS: //删除所有元素.
-			DeleteAllElementFromTree(hItem);
-			break;
-
-		case ID_RELATE_DATA:		 //关联元素数据.
-			break;
-
-		case ID_UNRELATE_DATA:		 //取消元素关联数据.
-			break;
-			
-		case ID_SHOW_ELEMENT:		 //显示元素.
-			break;
-			
-		case ID_HIDE_ELEMENT:		 //隐藏元素.
-			break;
-			
-		case ID_SELECT_ELEMENT:		 //选择元素.
-			break;
-						
-		case ID_UNSELECT_ELEMENT:	 //取消选择元素.
-			break;
-
-		case ID_EDIT_ELEMENT_ATTR:	 //元素属性选项.
-			break;
-
 		default:
+			/*
+			 *	向指定的数据插件发送菜单消息。
+			 */
+			CDataElement *p=(CDataElement*)GetItemData(hItem);
+			if(p)
+				p->SendMessage((CMessageListener*)p->m_pFactory->m_dataplugin,NULL,nID,NULL,NULL);
 			break;
 	}
 }
 
 // 实现菜单UI响应.
+//##ModelId=4C64BCCD0085
 void CContainerTreeCtrl::OnUpdateDynamicMenu(CCmdUI* pCmdUI)
 {
 	UINT nID = pCmdUI->m_nID;
@@ -459,6 +468,7 @@ void CContainerTreeCtrl::OnUpdateDynamicMenu(CCmdUI* pCmdUI)
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 //判断树形节点是否为容器节点.
+//##ModelId=4C653E10038E
 bool CContainerTreeCtrl::IsTreeItemContainer(HTREEITEM hItem)
 {
 	DWORD lParam=GetItemData(hItem);
@@ -470,6 +480,7 @@ bool CContainerTreeCtrl::IsTreeItemContainer(HTREEITEM hItem)
 
 //添加容器到容器树.
 //弹出容器对话框，选择容器类型来创建容器，并记录于树节点上.
+//##ModelId=4C6511CA0398
 bool CContainerTreeCtrl::AddContainerToTree(HTREEITEM hParentItem)
 {
 	if(!m_pTreeInfoStru->m_pElementManager) return false;
@@ -498,7 +509,7 @@ bool CContainerTreeCtrl::AddContainerToTree(HTREEITEM hParentItem)
 	::ZeroMemory(&item, sizeof(TVITEM));
 
 	item.mask = TVIF_IMAGE|TVIF_TEXT|TVIF_SELECTEDIMAGE|TVIF_PARAM;
-	item.pszText = (char *)pContainer->GetName().c_str();    //容器名.
+	item.pszText = (char *)pContainer->CDataObject::GetName().c_str();    //容器名.
 	item.iImage  = m_pTreeInfoStru->m_ItemImageNo[FOLD_IMAGE];                   //未选中时位图的索引. 
 	item.iSelectedImage = m_pTreeInfoStru->m_ItemImageNo[FOLD_SELECTED_IMAGE];   //选中时位图的索引.
 	item.lParam = (LPARAM)pContainer;                                            //记录容器指针.
@@ -538,38 +549,41 @@ END:
 	return bResult;
 }
 
-//显示所有容器.
-bool CContainerTreeCtrl::ShowAllContainers(HTREEITEM hTreeItem)
-{
-	
-
-	//先搜索根目录下的所有容器, 每个容器再递归搜索子容器.
-	//父节点是根节点, 搜索根目录下的所有容器.
-	if(hTreeItem==GetRootItem())
-	{
-
-
-
-	}
-	else //父节点是容器节点, 递归搜索子容器.
-	{
-       //通知容器下的容器，做相同的工作，考虑用函数指针!
-
-
-
-	}
-
-
-
-	return true;
-}
-
-
+////显示所有容器.
+////##ModelId=4DE736600136
+//bool CContainerTreeCtrl::ShowAllContainers(HTREEITEM hTreeItem)
+//{
+//	
+//
+//	//先搜索根目录下的所有容器, 每个容器再递归搜索子容器.
+//	//父节点是根节点, 搜索根目录下的所有容器.
+//	if(hTreeItem==GetRootItem())
+//	{
+//
+//
+//
+//	}
+//	else //父节点是容器节点, 递归搜索子容器.
+//	{
+//       //通知容器下的容器，做相同的工作，考虑用函数指针!
+//
+//
+//
+//	}
+//
+//
+//
+//	return true;
+//}
+//
+//
 /*
  *	添加元素到当前树结构中（元素必须位于容器的下一层）。
  */
+//##ModelId=4DE736600147
 bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 {
+	DWORD lParam=NULL;
 	/*
 	 *	异常判断
 	 */
@@ -608,7 +622,7 @@ bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 	::ZeroMemory(&item, sizeof(TVITEM));
 
 	item.mask = TVIF_IMAGE|TVIF_TEXT|TVIF_SELECTEDIMAGE|TVIF_PARAM;
-	item.pszText = (char *)pElement->GetName().c_str();    //容器名.
+	item.pszText = (char *)pElement->CDataObject::GetName().c_str();    //容器名.
 	item.iImage  = m_pTreeInfoStru->m_ItemImageNo[NODE_IMAGE];                   //未选中时位图的索引. 
 	item.iSelectedImage = m_pTreeInfoStru->m_ItemImageNo[NODE_SELECTED_IMAGE];   //选中时位图的索引.
 	item.lParam = (LPARAM)pElement;                                            //记录容器指针.
@@ -626,7 +640,7 @@ bool CContainerTreeCtrl::AddElementToTree(HTREEITEM hParentItem)
 
 
 	//新建元素的后台数据存储部分：
-	DWORD lParam=GetItemData(hParentItem);
+	lParam=GetItemData(hParentItem);
 	if(lParam>0)
 	{
 		CDataContainer *pParentContainer=(CDataContainer *)lParam;
@@ -650,6 +664,7 @@ END:
 /*
  *	删除一个元素
  */
+//##ModelId=4DE736600156
 bool CContainerTreeCtrl::DeleteElementFromTree(HTREEITEM hParentItem)
 {
 	/*
@@ -701,6 +716,7 @@ END:
 /*
  *	删除所有元素。
  */
+//##ModelId=4DE736600165
 bool CContainerTreeCtrl::DeleteAllElementFromTree(HTREEITEM hParentItem)
 {
 	/*
@@ -760,10 +776,11 @@ bool CContainerTreeCtrl::DeleteAllElementFromTree(HTREEITEM hParentItem)
 	}
 	return bResult;
 }
-
+//
 /*
  *	删除一个容器
  */
+//##ModelId=4DE736600173
 bool CContainerTreeCtrl::DeleteContainerFromTree(HTREEITEM hParentItem)
 {
 	bool                 bResult=false;
@@ -816,6 +833,7 @@ bool CContainerTreeCtrl::DeleteContainerFromTree(HTREEITEM hParentItem)
 /*
  *	删除所有容器（根节点菜单）。
  */
+//##ModelId=4DE736600182
 bool CContainerTreeCtrl::DeleteAllContainerFromTree(HTREEITEM hParentItem)
 {
 	/*

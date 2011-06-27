@@ -3,16 +3,19 @@
 #include "stdafx.h"
 #include "CPluginDll.h"
 
+//##ModelId=4C5A6F760093
 CPluginDll::CPluginDll( const String& name )
 {
 	m_Name = name;
     m_hInst = NULL;
 }
 
+//##ModelId=4C5A6F7600E1
 CPluginDll::~CPluginDll()
 {
 }
 
+//##ModelId=4C5A6F7600F1
 bool CPluginDll::Load()
 {
 	String name = m_Name;
@@ -21,16 +24,19 @@ bool CPluginDll::Load()
     return (m_hInst!=NULL);
 }
 
+//##ModelId=4C5A6F760110
 void CPluginDll::UnLoad()
 {
 	DYNLIB_UNLOAD(m_hInst);
 }
 
+//##ModelId=4C5A6F76016E
 void* CPluginDll::GetSymbol( const String& strName ) const throw()
 {
 	return (void*)DYNLIB_GETSYM( m_hInst, strName.c_str() );
 }
 
+//##ModelId=4C5A75DE01CC
 String CPluginDll::GetDynlibError(void) 
 {
 	LPVOID lpMsgBuf=NULL; 

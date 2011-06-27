@@ -19,9 +19,11 @@
 // See PluginManager.cpp for the implementation of this class
 //
 
+//##ModelId=4C60C53602A9
 class CPluginManagerApp : public CWinApp
 {
 public:
+	//##ModelId=4C60C53602AB
 	CPluginManagerApp();
 
 // Overrides

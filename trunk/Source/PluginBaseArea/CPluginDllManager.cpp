@@ -5,22 +5,26 @@
 
 template<> CPluginDllManager* CSingletonTml<CPluginDllManager>::m_SingletonPtr = 0;
 
+//##ModelId=4C5A75DE0130
 CPluginDllManager* CPluginDllManager::GetSingletonPtr(void)
 {
 	return m_SingletonPtr;
 }
 
+//##ModelId=4C5A75DE00E2
 CPluginDllManager& CPluginDllManager::GetSingleton(void)
 {
 	assert( m_SingletonPtr );
 	return ( *m_SingletonPtr );  
 }
 
+//##ModelId=4C5A75DE0008
 CPluginDllManager::CPluginDllManager()
 {
 
 }
 
+//##ModelId=4C5A75DE0027
 CPluginDllManager::~CPluginDllManager()
 {
 	// Unload & delete resources in turn
@@ -35,6 +39,7 @@ CPluginDllManager::~CPluginDllManager()
 }
 
 // Loads the passed library.
+//##ModelId=4C5A75DE0046
 CPluginDll* CPluginDllManager::Load(const String& filename)
 {
 	PluginDllList::iterator i = m_PluginDllList.find(filename);
@@ -54,6 +59,7 @@ CPluginDll* CPluginDllManager::Load(const String& filename)
 }
 
 // Unloads the passed library.
+//##ModelId=4C5A75DE0094
 void CPluginDllManager::UnLoad(CPluginDll* pPluginDll)
 {
 	if(!pPluginDll) return;

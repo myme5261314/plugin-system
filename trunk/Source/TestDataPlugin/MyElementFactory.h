@@ -23,6 +23,8 @@ public:
 	CMyElementFactory();
 	virtual ~CMyElementFactory();
 
+	virtual bool RegisterObject(CDataPlugin *p=NULL); 
+
 	// Returns the factory Guid.
     virtual const PLUGIN_GUID& GetGuid() const 
 	{ 
@@ -50,17 +52,19 @@ public:
 		{
 			CMyContainer *pMyContainer = new CMyContainer(InstanceName);
 			if(!pMyContainer) return NULL;
-			pMyContainer->SetGuid(MY_CONTAINER_GUID);
+			pMyContainer->CDataObject::SetGuid(MY_CONTAINER_GUID);
 			pElement=static_cast<CDataElement*>(pMyContainer);
 		}
 		else //ÔªËØ.
 		{
 			CMyElement *pMyElement = new CMyElement(InstanceName);
 			if(!pMyElement) return NULL;
-			pMyElement->SetGuid(MY_ELEMENT_GUID);
+			pMyElement->CDataObject::SetGuid(MY_ELEMENT_GUID);
 			pElement=static_cast<CDataElement*>(pMyElement);
 		}
 		
+		pElement->m_pFactory=this;
+
 		pElement->SetFactoryGuid(MY_ELEMENT_FACTORY_GUID);
 		return pElement;
 	}

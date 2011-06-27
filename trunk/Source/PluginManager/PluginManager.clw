@@ -6,15 +6,16 @@ ClassCount=3
 Class1=CPluginManagerApp
 LastClass=CAddContainerDlg
 NewFileInclude2=#include "PluginManager.h"
-ResourceCount=4
+ResourceCount=5
 NewFileInclude1=#include "stdafx.h"
 Class2=CContainerTreeCtrl
 LastTemplate=CDialog
-Resource1=IDR_ELEMENT_MENU
-Resource2=IDR_ROOT_MENU
-Resource3=IDD_ADD_CONTAINER_DLG
+Resource1=IDD_ADD_CONTAINER_DLG
+Resource2=IDR_ELEMENT_MENU
+Resource3=IDR_CONTAINER_MENU
 Class3=CAddContainerDlg
-Resource4=IDR_CONTAINER_MENU
+Resource4=IDR_ROOT_MENU
+Resource5=IDD_ADD_ELEMENT_DLG
 
 [CLS:CPluginManagerApp]
 Type=0
@@ -87,4 +88,13 @@ BaseClass=CDialog
 Filter=D
 LastObject=CAddContainerDlg
 VirtualFilter=dWC
+
+[DLG:IDD_ADD_ELEMENT_DLG]
+Type=1
+Class=?
+ControlCount=4
+Control1=IDOK,button,1342242817
+Control2=IDCANCEL,button,1342242816
+Control3=IDC_STATIC,static,1342308352
+Control4=IDC_EDIT1,edit,1350631552
 
