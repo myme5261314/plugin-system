@@ -4,6 +4,7 @@
 #include "CPluginBase.h"
 
 //响应消息处理.
+//##ModelId=4C5CCCCD0120
 long CPluginBase::OnMessageProc(HPLGC hPC, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	return CMessageListener::OnMessageProc(hPC, msg, wParam, lParam);

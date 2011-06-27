@@ -25,3 +25,12 @@ CMyElementFactory::~CMyElementFactory()
 {
 
 }
+
+bool CMyElementFactory::RegisterObject(CDataPlugin *p)
+{
+	if (p)
+	{
+		m_dataplugin=p;
+	}
+	return CDataElementFactory::RegisterObject(p);
+}

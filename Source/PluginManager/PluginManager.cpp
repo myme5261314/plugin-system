@@ -50,6 +50,7 @@ END_MESSAGE_MAP()
 /////////////////////////////////////////////////////////////////////////////
 // CPluginManagerApp construction
 
+//##ModelId=4C60C53602AB
 CPluginManagerApp::CPluginManagerApp()
 {
 	// TODO: add construction code here,

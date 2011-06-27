@@ -5,16 +5,19 @@
 
 template<> CFunctionPluginManager* CSingletonTml<CFunctionPluginManager>::m_SingletonPtr = 0;
 
+//##ModelId=4C5BD66600C5
 CFunctionPluginManager* CFunctionPluginManager::GetSingletonPtr(void)
 {
 	return m_SingletonPtr;
 }
 
+//##ModelId=4C5BD6660083
 CFunctionPluginManager::CFunctionPluginManager()
 {
 
 }
 
+//##ModelId=4C5BD6660091
 CFunctionPluginManager::~CFunctionPluginManager()
 {
 	// Unload & delete resources in turn
@@ -28,6 +31,7 @@ CFunctionPluginManager::~CFunctionPluginManager()
 }
 
 //添加一个功能插件.
+//##ModelId=4C5BD666010E
 bool CFunctionPluginManager::ApppendFunctionPlugin(CFunctionPlugin *pFuncPlugin)
 {
 	if(!pFuncPlugin) return false;
@@ -49,6 +53,7 @@ bool CFunctionPluginManager::ApppendFunctionPlugin(CFunctionPlugin *pFuncPlugin)
 }
 
 //删除一个功能插件, 根据插件指针.
+//##ModelId=4C5BD666015C
 void CFunctionPluginManager::DeleteFunctionPlugin(CFunctionPlugin *pFuncPlugin)
 {
 	if(!pFuncPlugin) return;
@@ -62,6 +67,7 @@ void CFunctionPluginManager::DeleteFunctionPlugin(CFunctionPlugin *pFuncPlugin)
 }
 
 //删除一个功能插件, 根据插件名.
+//##ModelId=4C5BD66601BA
 void CFunctionPluginManager::DeleteFunctionPlugin(const String& PluginName)
 {
 	if(PluginName.length()<1) return;
@@ -75,6 +81,7 @@ void CFunctionPluginManager::DeleteFunctionPlugin(const String& PluginName)
 }
 
 //根据插件名, 获取一个功能插件.
+//##ModelId=4C5BD6660208
 CFunctionPlugin *CFunctionPluginManager::GetFunctionPlugin(const String& PluginName)
 {
 	if(PluginName.length()<1) return NULL;
@@ -87,6 +94,7 @@ CFunctionPlugin *CFunctionPluginManager::GetFunctionPlugin(const String& PluginN
 }
 
 //获取功能插件个数.
+//##ModelId=4C5BD6660256
 long CFunctionPluginManager::GetFunctionPluginNum(void)
 {
 	return m_FunctionPluginList.size();

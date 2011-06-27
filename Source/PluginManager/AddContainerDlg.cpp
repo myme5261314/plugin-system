@@ -16,6 +16,7 @@ static char THIS_FILE[] = __FILE__;
 // CAddContainerDlg dialog
 
 
+//##ModelId=4C6511CA0243
 CAddContainerDlg::CAddContainerDlg(CDataElementManager *pElementManager, CWnd* pParent /*=NULL*/)
 	: CDialog(CAddContainerDlg::IDD, pParent)
 {
@@ -27,6 +28,7 @@ CAddContainerDlg::CAddContainerDlg(CDataElementManager *pElementManager, CWnd* p
 }
 
 
+//##ModelId=4C6511CA02C1
 void CAddContainerDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
@@ -46,6 +48,7 @@ END_MESSAGE_MAP()
 /////////////////////////////////////////////////////////////////////////////
 // CAddContainerDlg message handlers
 
+//##ModelId=4C6511CA02CD
 BOOL CAddContainerDlg::OnInitDialog() 
 {
 	CDialog::OnInitDialog();
@@ -89,6 +92,7 @@ BOOL CAddContainerDlg::OnInitDialog()
 	              // EXCEPTION: OCX Property Pages should return FALSE
 }
 
+//##ModelId=4C6511CA02D1
 void CAddContainerDlg::OnClickContainerList(NMHDR* pNMHDR, LRESULT* pResult) 
 {
 	// TODO: Add your control notification handler code here
@@ -111,6 +115,7 @@ END:
 	*pResult = 0;
 }
 
+//##ModelId=4C6511CA02CF
 void CAddContainerDlg::OnOK() 
 {
 	// TODO: Add extra validation here

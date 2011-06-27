@@ -6,18 +6,51 @@
 --------------------Configuration: TestDataPlugin - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP2E8.tmp" with contents
+Creating command line "rc.exe /l 0x804 /fo"Release/TestDataPlugin.res" /d "NDEBUG" /d "_AFXDLL" "F:\插件开发资料\一种可配置数据插件的\Program\Source\TestDataPlugin\TestDataPlugin.rc"" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPE315.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/TestDataPlugin.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestDataPlugin\TestDataPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestDataPlugin\MyContainer.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestDataPlugin\MyDataPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestDataPlugin\MyElement.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestDataPlugin\MyElementFactory.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPE315.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPE316.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/TestDataPlugin.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestDataPlugin\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPE316.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPE317.tmp" with contents
 [
 /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\Bin/b.pdb" /debug /machine:I386 /def:".\TestDataPlugin.def" /out:"..\..\Bin/b.dpl" /implib:"..\..\Bin/b.lib" 
 ".\Release\TestDataPlugin.obj"
 ".\Release\MyContainer.obj"
+".\Release\MyDataPlugin.obj"
 ".\Release\MyElement.obj"
 ".\Release\MyElementFactory.obj"
 ".\Release\StdAfx.obj"
 ".\Release\TestDataPlugin.res"
 ]
-Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSP2E8.tmp"
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSPE317.tmp"
 <h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+TestDataPlugin.cpp
+MyContainer.cpp
+MyDataPlugin.cpp
+MyElement.cpp
+MyElementFactory.cpp
+Generating Code...
+d:\program files\microsoft visual studio\vc98\mfc\include\afxwin1.inl(41) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxwin1.inl(41) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxwin1.inl(41) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxwin1.inl(41) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Node' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxwin1.inl(41) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
 Linking...
 LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
    Creating library ..\..\Bin/b.lib and object ..\..\Bin/b.exp

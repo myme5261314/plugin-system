@@ -10,6 +10,7 @@
 
 IMPLEMENT_DYNAMIC(CAddElementDlg, CDialog)
 
+//##ModelId=4DE73660006F
 CAddElementDlg::CAddElementDlg(CDataElementManager *pElementManager,CWnd* pParent /*=NULL*/)
 	: CDialog(CAddElementDlg::IDD, pParent)
 {
@@ -20,10 +21,12 @@ CAddElementDlg::CAddElementDlg(CDataElementManager *pElementManager,CWnd* pParen
 	m_ElementName = "";
 }
 
+//##ModelId=4DE736600074
 CAddElementDlg::~CAddElementDlg()
 {
 }
 
+//##ModelId=4DE736600085
 void CAddElementDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
@@ -32,12 +35,13 @@ void CAddElementDlg::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(CAddElementDlg, CDialog)
-	ON_BN_CLICKED(IDOK, &CAddElementDlg::OnBnClickedOk)
+	ON_BN_CLICKED(IDOK, CAddElementDlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
 // CAddElementDlg 消息处理程序
 
+//##ModelId=4DE73660008D
 void CAddElementDlg::OnBnClickedOk()
 {
 	// TODO: 在此添加控件通知处理程序代码

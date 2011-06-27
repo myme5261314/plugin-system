@@ -5,16 +5,19 @@
 
 template<> CMessageListenerManager* CSingletonTml<CMessageListenerManager>::m_SingletonPtr = 0;
 
+//##ModelId=4C5CDA1C025A
 CMessageListenerManager* CMessageListenerManager::GetSingletonPtr(void)
 {
 	return m_SingletonPtr;
 }
 
+//##ModelId=4C5CDA1C0219
 CMessageListenerManager::CMessageListenerManager()
 {
 
 }
 
+//##ModelId=4C5CDA1C0229
 CMessageListenerManager::~CMessageListenerManager()
 {
 	// Unload & delete resources in turn
@@ -28,6 +31,7 @@ CMessageListenerManager::~CMessageListenerManager()
 }
 
 //添加一个监听器.
+//##ModelId=4C5CDA1C02A6
 bool CMessageListenerManager::ApppendMessageListener(CMessageListener *pMsgListener)
 {
 	if(!pMsgListener) return false;
@@ -48,6 +52,7 @@ bool CMessageListenerManager::ApppendMessageListener(CMessageListener *pMsgListe
 }
 		
 //删除一个监听器, 根据监听器指针.
+//##ModelId=4C5CDA1C02F4
 void CMessageListenerManager::DeleteMessageListener(CMessageListener *pMsgListener)
 {
 	if(!pMsgListener) return;
@@ -60,6 +65,7 @@ void CMessageListenerManager::DeleteMessageListener(CMessageListener *pMsgListen
 }
 
 //删除一个监听器, 根据监听器名.
+//##ModelId=4C5CDA1C0342
 void CMessageListenerManager::DeleteMessageListener(const String& ListenerName)
 {
 	if(ListenerName.length()<1) return;
@@ -72,6 +78,7 @@ void CMessageListenerManager::DeleteMessageListener(const String& ListenerName)
 }
 
 //根据监听器名, 获取一个监听器.
+//##ModelId=4C5CDA1C0390
 CMessageListener *CMessageListenerManager::GetMessageListener(const String& ListenerName)
 {
 	if(ListenerName.length()<1) return NULL;
@@ -84,12 +91,14 @@ CMessageListener *CMessageListenerManager::GetMessageListener(const String& List
 }
 
 //获取监听器个数.
+//##ModelId=4C5CDA1C03DE
 long CMessageListenerManager::GetMessageListenerNum(void)
 {
 	return m_MessageListenerList.size();
 }
 
 //同步发送消息.
+//##ModelId=4C5CDA1D0044
 long CMessageListenerManager::SendMessage(CMessageListener *pMsgListener, HPLGC hPC, UINT Msg, WPARAM wParam, LPARAM lParam)
 {
 	//判断是否无效消息.

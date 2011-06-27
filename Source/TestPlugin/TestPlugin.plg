@@ -3,10 +3,220 @@
 <pre>
 <h1>Build Log</h1>
 <h3>
+--------------------Configuration: PluginBaseArea - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PluginBaseArea.res" /d "NDEBUG" /d "_AFXDLL" "F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\PluginBaseArea.rc"" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP62B8.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "__PLUGIN_BASE_AREA_DLL__" /Fp"Release/PluginBaseArea.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginDll.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginDllManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CFunctionPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginBase.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CFunctionPluginManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataObject.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataElement.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataContainer.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataElementFactory.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataElementManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CContainerRoot.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CDataPluginManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CPluginWorkspace.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CMessageListener.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\CMessageListenerManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\InnerDefine.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\PluginBaseArea.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP62B8.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP62B9.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "__PLUGIN_BASE_AREA_DLL__" /Fp"Release/PluginBaseArea.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginBaseArea\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP62B9.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP62BA.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\Bin\PluginBaseArea.pdb" /debug /machine:I386 /def:".\PluginBaseArea.def" /out:"..\..\Bin\PluginBaseArea.dll" /implib:"..\..\Bin\PluginBaseArea.lib" 
+".\Release\CPluginDll.obj"
+".\Release\CPluginDllManager.obj"
+".\Release\CDataPlugin.obj"
+".\Release\CFunctionPlugin.obj"
+".\Release\CPluginBase.obj"
+".\Release\CFunctionPluginManager.obj"
+".\Release\CDataObject.obj"
+".\Release\CDataElement.obj"
+".\Release\CDataContainer.obj"
+".\Release\CDataElementFactory.obj"
+".\Release\CDataElementManager.obj"
+".\Release\CContainerRoot.obj"
+".\Release\CDataPluginManager.obj"
+".\Release\CPluginWorkspace.obj"
+".\Release\CMessageListener.obj"
+".\Release\CMessageListenerManager.obj"
+".\Release\InnerDefine.obj"
+".\Release\PluginBaseArea.obj"
+".\Release\StdAfx.obj"
+".\Release\PluginBaseArea.res"
+]
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSP62BA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CPluginDll.cpp
+CPluginDllManager.cpp
+CDataPlugin.cpp
+CFunctionPlugin.cpp
+CPluginBase.cpp
+CFunctionPluginManager.cpp
+CDataObject.cpp
+CDataElement.cpp
+CDataContainer.cpp
+CDataElementFactory.cpp
+CDataElementManager.cpp
+CContainerRoot.cpp
+CDataPluginManager.cpp
+CPluginWorkspace.cpp
+CMessageListener.cpp
+CMessageListenerManager.cpp
+InnerDefine.cpp
+PluginBaseArea.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library ..\..\Bin\PluginBaseArea.lib and object ..\..\Bin\PluginBaseArea.exp
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP73BB.bat" with contents
+[
+@echo off
+Copy .\CSingletonTml.h  ..\..\Include\.
+Copy .\PluginBase_Define.h ..\..\Include\.
+Copy .\CPluginWorkspace.h  ..\..\Include\.
+Copy .\CPluginBase.h ..\..\Include\.
+Copy .\CFunctionPlugin.h ..\..\Include\.
+Copy .\CMessageListener.h ..\..\Include\.
+Copy .\CDataObject.h ..\..\Include\.
+Copy .\CDataElement.h ..\..\Include\.
+Copy .\CDataContainer.h ..\..\Include\.
+Copy .\CDataElementFactory.h ..\..\Include\.
+Copy .\CDataElementManager.h ..\..\Include\.
+Copy .\CContainerRoot.h ..\..\Include\.
+]
+Creating command line "C:\Users\liupeng\AppData\Local\Temp\RSP73BB.bat"
+
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+<h3>
+--------------------Configuration: PluginManager - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PluginManager.res" /d "NDEBUG" /d "_AFXDLL" "F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginManager\PluginManager.rc"" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP74F4.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "__PLUGIN_MANAGER_DLL__" /FR"Release/" /Fp"Release/PluginManager.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginManager\CContainerTreeCtrl.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginManager\TreeElementManager.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginManager\AddContainerDlg.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginManager\AddElementDlg.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginManager\PluginManager.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP74F4.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP74F5.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "__PLUGIN_MANAGER_DLL__" /FR"Release/" /Fp"Release/PluginManager.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\PluginManager\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP74F5.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP74F6.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\Bin\PluginManager.pdb" /debug /machine:I386 /def:".\PluginManager.def" /out:"..\..\Bin\PluginManager.dll" /implib:"..\..\Bin\PluginManager.lib" 
+".\Release\CContainerTreeCtrl.obj"
+".\Release\TreeElementManager.obj"
+".\Release\AddContainerDlg.obj"
+".\Release\AddElementDlg.obj"
+".\Release\PluginManager.obj"
+".\Release\StdAfx.obj"
+".\Release\PluginManager.res"
+"\插件开发资料\一种可配置数据插件的\Program\Bin\PluginBaseArea.lib"
+]
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSP74F6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CContainerTreeCtrl.cpp
+TreeElementManager.cpp
+AddContainerDlg.cpp
+AddElementDlg.cpp
+PluginManager.cpp
+Generating Code...
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Nil' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Nilrefs' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Node' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Node' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn2.inl(113) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Node' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Node' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataContainer *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataContainer *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataContainer *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Node' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElement *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElement *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElement *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Node' : identifier was truncated to '255' characters in the debug information
+d:\program files\microsoft visual studio\vc98\mfc\include\afxcmn.inl(473) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,CDataElementFactory *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,CDataElementFactory *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<CDataElementFactory *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library ..\..\Bin\PluginManager.lib and object ..\..\Bin\PluginManager.exp
+Creating command line "bscmake.exe /nologo /o"..\..\Bin\PluginManager.bsc"  ".\Release\StdAfx.sbr" ".\Release\CContainerTreeCtrl.sbr" ".\Release\TreeElementManager.sbr" ".\Release\AddContainerDlg.sbr" ".\Release\AddElementDlg.sbr" ".\Release\PluginManager.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP7F44.bat" with contents
+[
+@echo off
+Copy .\PluginManager_Define.h ..\..\Include\.
+Copy .\CContainerTreeCtrl.h ..\..\Include\.
+]
+Creating command line "C:\Users\liupeng\AppData\Local\Temp\RSP7F44.bat"
+
+已复制         1 个文件。
+已复制         1 个文件。
+<h3>
 --------------------Configuration: TestPlugin - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPCE92.tmp" with contents
+Creating command line "rc.exe /l 0x804 /fo"Release/TestPlugin.res" /d "NDEBUG" /d "_AFXDLL" "F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\TestPlugin.rc"" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP809C.tmp" with contents
 [
 /nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/TestPlugin.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\TestPlugin.cpp"
@@ -15,14 +225,28 @@ Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPCE92.tmp" with c
 "F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\TestPluginDoc.cpp"
 "F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\TestPluginView.cpp"
 ]
-Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPCE92.tmp" 
-Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPCEA3.tmp" with contents
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP809C.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP809D.tmp" with contents
 [
 /nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/TestPlugin.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "F:\插件开发资料\一种可配置数据插件的\Program\Source\TestPlugin\StdAfx.cpp"
 ]
-Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPCEA3.tmp" 
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSP809D.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP809E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"..\..\Bin/TestPlugin.pdb" /debug /machine:I386 /out:"..\..\Bin/TestPlugin.exe" 
+".\Release\TestPlugin.obj"
+".\Release\MainFrm.obj"
+".\Release\WorkspaceBar.obj"
+".\Release\StdAfx.obj"
+".\Release\TestPluginDoc.obj"
+".\Release\TestPluginView.obj"
+".\Release\TestPlugin.res"
+"\插件开发资料\一种可配置数据插件的\Program\Bin\PluginManager.lib"
+]
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSP809E.tmp"
 <h3>Output Window</h3>
+Compiling resources...
 Compiling...
 StdAfx.cpp
 Compiling...
@@ -35,24 +259,8 @@ TestPluginDoc.cpp
 Automatically linking with BCGCBPRO100.lib
 TestPluginView.cpp
 Generating Code...
-Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPE96F.tmp" with contents
-[
-/nologo /subsystem:windows /incremental:no /pdb:"..\..\Bin/TestPlugin.pdb" /debug /machine:I386 /out:"..\..\Bin/TestPlugin.exe" 
-".\Release\TestPlugin.obj"
-".\Release\MainFrm.obj"
-".\Release\WorkspaceBar.obj"
-".\Release\StdAfx.obj"
-".\Release\TestPluginDoc.obj"
-".\Release\TestPluginView.obj"
-".\Release\TestPlugin.res"
-]
-Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSPE96F.tmp"
-<h3>Output Window</h3>
 Linking...
 LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
-Creating command line "bscmake.exe /nologo /o"..\..\Bin/TestPlugin.bsc"  ".\Release\StdAfx.sbr" ".\Release\TestPlugin.sbr" ".\Release\MainFrm.sbr" ".\Release\WorkspaceBar.sbr" ".\Release\TestPluginDoc.sbr" ".\Release\TestPluginView.sbr""
-Creating browse info file...
-<h3>Output Window</h3>
 
 
 

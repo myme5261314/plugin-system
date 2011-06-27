@@ -6,7 +6,21 @@
 --------------------Configuration: TestFuncPlugin - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP2788.tmp" with contents
+Creating command line "rc.exe /l 0x804 /fo"Release/TestFuncPlugin.res" /d "NDEBUG" /d "_AFXDLL" "F:\插件开发资料\一种可配置数据插件的\Program\Source\TestFuncPlugin\TestFuncPlugin.rc"" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPA9B1.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/TestFuncPlugin.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestFuncPlugin\TestFuncPlugin.cpp"
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestFuncPlugin\MyFuncPlugin.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPA9B1.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPA9B2.tmp" with contents
+[
+/nologo /MD /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/TestFuncPlugin.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\插件开发资料\一种可配置数据插件的\Program\Source\TestFuncPlugin\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\liupeng\AppData\Local\Temp\RSPA9B2.tmp" 
+Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSPA9C3.tmp" with contents
 [
 /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\Bin/a.pdb" /debug /machine:I386 /def:".\TestFuncPlugin.def" /out:"..\..\Bin/a.fpl" /implib:"..\..\Bin/a.lib" 
 ".\Release\TestFuncPlugin.obj"
@@ -14,8 +28,15 @@ Creating temporary file "C:\Users\liupeng\AppData\Local\Temp\RSP2788.tmp" with c
 ".\Release\StdAfx.obj"
 ".\Release\TestFuncPlugin.res"
 ]
-Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSP2788.tmp"
+Creating command line "link.exe @C:\Users\liupeng\AppData\Local\Temp\RSPA9C3.tmp"
 <h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+TestFuncPlugin.cpp
+MyFuncPlugin.cpp
+Generating Code...
 Linking...
 LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
    Creating library ..\..\Bin/a.lib and object ..\..\Bin/a.exp

@@ -19,9 +19,11 @@
 // See PluginBaseArea.cpp for the implementation of this class
 //
 
+//##ModelId=4C5A6B8A011A
 class CPluginBaseAreaApp : public CWinApp
 {
 public:
+	//##ModelId=4C5A6B8A011C
 	CPluginBaseAreaApp();
 
 // Overrides

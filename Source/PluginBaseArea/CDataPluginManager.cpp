@@ -5,16 +5,19 @@
 
 template<> CDataPluginManager* CSingletonTml<CDataPluginManager>::m_SingletonPtr = 0;
 
+//##ModelId=4DE7365903A9
 CDataPluginManager* CDataPluginManager::GetSingletonPtr(void)
 {
 	return m_SingletonPtr;
 }
 
+//##ModelId=4DE7365903A1
 CDataPluginManager::CDataPluginManager()
 {
 
 }
 
+//##ModelId=4DE7365903A2
 CDataPluginManager::~CDataPluginManager()
 {
 	// Unload & delete resources in turn
@@ -28,6 +31,7 @@ CDataPluginManager::~CDataPluginManager()
 }
 
 //添加一个数据插件.
+//##ModelId=4DE7365903AC
 bool CDataPluginManager::ApppendDataPlugin(CDataPlugin *pDataPlugin)
 {
 	if(!pDataPlugin) return false;
@@ -49,6 +53,7 @@ bool CDataPluginManager::ApppendDataPlugin(CDataPlugin *pDataPlugin)
 }
 
 //删除一个数据插件, 根据插件指针.
+//##ModelId=4DE7365903AE
 void CDataPluginManager::DeleteDataPlugin(CDataPlugin *pDataPlugin)
 {
 	if(!pDataPlugin) return;
@@ -62,6 +67,7 @@ void CDataPluginManager::DeleteDataPlugin(CDataPlugin *pDataPlugin)
 }
 
 //删除一个数据插件, 根据插件名.
+//##ModelId=4DE7365903B0
 void CDataPluginManager::DeleteDataPlugin(const String& PluginName)
 {
 	if(PluginName.length()<1) return;
@@ -75,6 +81,7 @@ void CDataPluginManager::DeleteDataPlugin(const String& PluginName)
 }
 
 //根据插件名, 获取一个数据插件.
+//##ModelId=4DE7365903B2
 CDataPlugin *CDataPluginManager::GetDataPlugin(const String& PluginName)
 {
 	if(PluginName.length()<1) return NULL;
@@ -87,6 +94,7 @@ CDataPlugin *CDataPluginManager::GetDataPlugin(const String& PluginName)
 }
 
 //获取数据插件个数.
+//##ModelId=4DE7365903B4
 long CDataPluginManager::GetDataPluginNum(void)
 {
 	return m_DataPluginList.size();

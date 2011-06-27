@@ -171,7 +171,7 @@ int CTestPluginApp::ExitInstance()
 	
 	if(m_pWorkSpace) delete m_pWorkSpace;
 	m_pWorkSpace=NULL;
-
+	
 
 
 	return CWinApp::ExitInstance();

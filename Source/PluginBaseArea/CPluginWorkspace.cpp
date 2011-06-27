@@ -11,16 +11,19 @@
 
 CPluginWorkspace *CPluginWorkspace::m_SingletonPtr=NULL;
 
+//##ModelId=4C5A8167004F
 CPluginWorkspace* CPluginWorkspace::GetSingletonPtr(void)
 {
 	return m_SingletonPtr;
 }
 
+//##ModelId=4C5A7A330202
 CPluginWorkspace::CPluginWorkspace()
 {
 	m_pWorkspaceInfoStru = NULL;
 }
 
+//##ModelId=4C5A7A33022F
 CPluginWorkspace::~CPluginWorkspace()
 {
 	//释放插件系统环境.
@@ -28,6 +31,7 @@ CPluginWorkspace::~CPluginWorkspace()
 }
 
 //初始化管理器集.
+//##ModelId=4C5CB517028C
 bool CPluginWorkspace::InitialManagerSets(void)
 {
 	if(!m_pWorkspaceInfoStru) return false;
@@ -40,12 +44,11 @@ bool CPluginWorkspace::InitialManagerSets(void)
 	m_pWorkspaceInfoStru->m_pMsgListenerManager=new CMessageListenerManager();
 	if(!m_pWorkspaceInfoStru->m_pMsgListenerManager) goto END;
 
+	m_pWorkspaceInfoStru->m_pDataManager=new CDataPluginManager();
+	if (!m_pWorkspaceInfoStru->m_pDataManager) goto END;
+
 	m_pWorkspaceInfoStru->m_pFunctionManager=new CFunctionPluginManager();
 	if(!m_pWorkspaceInfoStru->m_pFunctionManager) goto END;
-
-	m_pWorkspaceInfoStru->m_pDataManager=new CDataPluginManager();
-
-
 
 	m_pWorkspaceInfoStru->m_pElementManager=new CDataElementManager();
 	if(!m_pWorkspaceInfoStru->m_pElementManager) goto END;
@@ -59,6 +62,7 @@ END:
 }
 
 //释放管理器集.
+//##ModelId=4C5CB51702EA
 void CPluginWorkspace::ReleaseManagerSets(void)
 {
 	if(!m_pWorkspaceInfoStru) return;
@@ -66,6 +70,12 @@ void CPluginWorkspace::ReleaseManagerSets(void)
 	//释放元素工厂.
 	if(m_pWorkspaceInfoStru->m_pElementManager!=NULL) delete m_pWorkspaceInfoStru->m_pElementManager;
 	m_pWorkspaceInfoStru->m_pElementManager=NULL;
+
+	/*
+	 *	释放数据插件
+	 */
+	if (m_pWorkspaceInfoStru->m_pDataManager!=NULL) delete m_pWorkspaceInfoStru->m_pDataManager;
+	m_pWorkspaceInfoStru->m_pDataManager=NULL;
 
 	//先释放插件(调用UnInstall())
 	if(m_pWorkspaceInfoStru->m_pFunctionManager!=NULL) delete m_pWorkspaceInfoStru->m_pFunctionManager;
@@ -82,6 +92,7 @@ void CPluginWorkspace::ReleaseManagerSets(void)
 }
 
 //初始化插件系统环境.
+//##ModelId=4C5A816700CC
 long CPluginWorkspace::InitialPluginEnv(void)
 {
 	char FilePath[_MAX_PATH]="", FileName[_MAX_PATH]="";
@@ -117,6 +128,7 @@ END:
 }
 
 //释放插件系统环境.
+//##ModelId=4C5A8167010A
 void CPluginWorkspace::ReleasePluginEnv(void)
 {
 	//释放管理器集.
@@ -142,6 +154,7 @@ b.dpl
 */
 
 //装载所有的插件.
+//##ModelId=4C5BC77D02E9
 bool CPluginWorkspace::LoadAllPlugins(const char *pPlgCfgFileName)
 {
 	CStdioFile InFile;
@@ -195,6 +208,7 @@ END:
 }
 
 //卸载所有的插件.
+//##ModelId=4C5A81670011
 void CPluginWorkspace::UnloadAllPlugins(void)
 {
 	if(!m_pWorkspaceInfoStru->m_pDllManager) return;
@@ -217,6 +231,7 @@ void CPluginWorkspace::UnloadAllPlugins(void)
 }
 
 //装载一个插件.
+//##ModelId=4C5BC77D0356
 bool CPluginWorkspace::LoadAPlugin(const char *pPathName)
 {
 	CPluginDll       *pPluginDll=NULL;
@@ -236,6 +251,7 @@ bool CPluginWorkspace::LoadAPlugin(const char *pPathName)
 }
 
 //由工作区向所有插件对象进行消息广播，用来通知事件.
+//##ModelId=4C5D102401D4
 long CPluginWorkspace::BroadcastMessage(HPLGC hPC, UINT Msg, WPARAM wParam, LPARAM lParam)
 {
 	if(!m_pWorkspaceInfoStru || !m_pWorkspaceInfoStru->m_pMsgListenerManager) return 0;
